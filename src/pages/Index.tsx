@@ -196,14 +196,20 @@ const Index = () => {
 
       {/* Problem/Solution Section */}
       <section className="py-20 px-6 bg-card">
+        <div className="container mx-auto max-w-6xl text-center mb-16">
+          <Badge variant="secondary" className="mb-6 bg-secondary/10 text-secondary">The Challenge</Badge>
+          <h2 className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
+            The Problem Isn't Your Expertise. It's Your Delivery.
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
+            Your growth is throttled by manual systems that don't scale and static content that fails to deliver provable results.
+          </p>
+        </div>
+
         <div className="container mx-auto max-w-6xl">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Problem Side */}
             <div className="space-y-6">
-              <Badge variant="secondary" className="bg-secondary/10 text-secondary">The Challenge</Badge>
-              <h2 className="text-4xl font-bold text-foreground">
-                The Problem Isn't Your Expertise
-              </h2>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 rounded-full bg-secondary mt-2 flex-shrink-0" />
