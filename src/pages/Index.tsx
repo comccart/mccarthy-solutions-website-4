@@ -91,7 +91,28 @@ const Index = () => {
   }];
   return <div className="min-h-screen bg-background">
       {/* Navigation */}
-      
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
+        <div className="container mx-auto px-6 py-4">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2">
+              <Zap className="w-6 h-6 text-primary" />
+              <div className="text-2xl font-bold text-foreground">McCarthy Solutions</div>
+            </div>
+            
+            <div className="hidden md:flex items-center gap-8">
+              <a href="#services" className="text-foreground hover:text-accent transition-colors">Services</a>
+              <a href="#process" className="text-foreground hover:text-accent transition-colors">Process</a>
+              <a href="#results" className="text-foreground hover:text-accent transition-colors">Results</a>
+              <a href="#testimonials" className="text-foreground hover:text-accent transition-colors">Testimonials</a>
+              <Link to="/blog" className="text-foreground hover:text-accent transition-colors">Blog</Link>
+            </div>
+
+            <Button variant="default" size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg">
+              Book Free Strategy Call
+            </Button>
+          </div>
+        </div>
+      </nav>
 
       {/* Enhanced Hero Section */}
       <section className="pt-32 pb-20 px-6">
@@ -175,62 +196,86 @@ const Index = () => {
 
       {/* Problem/Solution Section */}
       <section className="py-20 px-6 bg-card">
+        <div className="container mx-auto max-w-6xl text-center mb-16">
+          <Badge variant="secondary" className="mb-6 bg-secondary/10 text-secondary">The Challenge</Badge>
+          <h2 className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
+            The Problem Isn't Your Expertise. It's Your Delivery.
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
+            Your growth is throttled by manual systems that don't scale and static content that fails to deliver provable results.
+          </p>
+        </div>
+
         <div className="container mx-auto max-w-6xl">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-8 items-start">
             {/* Problem Side */}
-            <div className="space-y-6">
-              <Badge variant="secondary" className="bg-secondary/10 text-secondary">The Challenge</Badge>
-              <h2 className="text-4xl font-bold text-foreground">
-                The Problem Isn't Your Expertise
-              </h2>
-              <div className="space-y-4">
-                <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 rounded-full bg-secondary mt-2 flex-shrink-0" />
-                  <p className="text-muted-foreground">Your team is maxed out, but demand keeps growing</p>
+            <div className="p-8 rounded-2xl bg-muted/50 border border-border space-y-8">
+              <div className="space-y-3">
+                <div className="flex items-center gap-3">
+                  <TrendingUp className="w-5 h-5 text-secondary" />
+                  <h3 className="text-xl font-bold text-foreground">Your Current State</h3>
                 </div>
-                <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 rounded-full bg-secondary mt-2 flex-shrink-0" />
-                  <p className="text-muted-foreground">Manual processes eat up valuable time and resources</p>
+                <p className="text-sm text-muted-foreground">Manual & Fragmented</p>
+              </div>
+
+              <div className="space-y-3">
+                <div className="flex items-center gap-3">
+                  <Clock className="w-5 h-5 text-secondary" />
+                  <h3 className="text-xl font-bold text-foreground">Severe Operational Drag</h3>
                 </div>
-                <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 rounded-full bg-secondary mt-2 flex-shrink-0" />
-                  <p className="text-muted-foreground">Scaling requires hiring more people, increasing costs</p>
+                <p className="text-muted-foreground">Expert time is lost to repetitive admin, and manual tasks are throttling your growth.</p>
+              </div>
+
+              <div className="space-y-3">
+                <div className="flex items-center gap-3">
+                  <Target className="w-5 h-5 text-secondary" />
+                  <h3 className="text-xl font-bold text-foreground">Static, "One-Size-Fits-All" Content</h3>
                 </div>
-                <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 rounded-full bg-secondary mt-2 flex-shrink-0" />
-                  <p className="text-muted-foreground">Maintaining quality while growing feels impossible</p>
+                <p className="text-muted-foreground">Outdated, generic content disengages learners and kills knowledge retention.</p>
+              </div>
+
+              <div className="space-y-3">
+                <div className="flex items-center gap-3">
+                  <BarChart3 className="w-5 h-5 text-secondary" />
+                  <h3 className="text-xl font-bold text-foreground">An Unproven Business Impact</h3>
                 </div>
+                <p className="text-muted-foreground">You're stuck reporting on vanity metrics, unable to prove the true ROI of your training.</p>
               </div>
             </div>
 
             {/* Solution Side */}
-            <div className="space-y-6 p-8 rounded-2xl bg-primary/5 border-2 border-primary/20">
-              <Badge variant="default" className="bg-primary text-primary-foreground">The Solution</Badge>
-              <h2 className="text-4xl font-bold text-foreground">
-                AI-Powered Scale Without the Headcount
-              </h2>
-              <div className="space-y-4">
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                  <p className="text-foreground">Automate repetitive tasks and free your team for high-value work</p>
+            <div className="p-8 rounded-2xl bg-gradient-to-br from-secondary via-secondary to-secondary/90 text-secondary-foreground space-y-8">
+              <div className="space-y-3">
+                <div className="flex items-center gap-3">
+                  <Zap className="w-5 h-5 text-secondary-foreground" />
+                  <h3 className="text-xl font-bold text-secondary-foreground">With McCarthy Solutions</h3>
                 </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                  <p className="text-foreground">Build adaptive learning systems that scale with demand</p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                  <p className="text-foreground">Leverage data-driven insights to accelerate growth</p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                  <p className="text-foreground">Maintain quality while serving 10x more clients</p>
-                </div>
+                <p className="text-sm text-secondary-foreground/90">Automated & Intelligent</p>
               </div>
-              <Button variant="default" className="bg-primary text-primary-foreground hover:bg-primary/90 gap-2">
-                See How It Works
-                <ArrowRight className="w-4 h-4" />
-              </Button>
+
+              <div className="space-y-3">
+                <div className="flex items-center gap-3">
+                  <Zap className="w-5 h-5 text-secondary-foreground" />
+                  <h3 className="text-xl font-bold text-secondary-foreground">Scalable, Automated Operations</h3>
+                </div>
+                <p className="text-secondary-foreground/90">Scale your delivery without adding headcount. Automate your coaching workflows.</p>
+              </div>
+
+              <div className="space-y-3">
+                <div className="flex items-center gap-3">
+                  <Target className="w-5 h-5 text-secondary-foreground" />
+                  <h3 className="text-xl font-bold text-secondary-foreground">Dynamic, Personalized Learning</h3>
+                </div>
+                <p className="text-secondary-foreground/90">Turn static content into interactive experiences and personalized paths that boost engagement.</p>
+              </div>
+
+              <div className="space-y-3">
+                <div className="flex items-center gap-3">
+                  <LineChart className="w-5 h-5 text-secondary-foreground" />
+                  <h3 className="text-xl font-bold text-secondary-foreground">Clear, Data-Driven ROI</h3>
+                </div>
+                <p className="text-secondary-foreground/90">Prove your business impact with concrete data and reports your clients demand.</p>
+              </div>
             </div>
           </div>
         </div>
