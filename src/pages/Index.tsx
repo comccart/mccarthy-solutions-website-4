@@ -126,7 +126,7 @@ const Index = () => {
               </div>
               <span className="text-sm text-secondary font-medium">5.0</span>
             </div>
-            <Badge variant="default" className="bg-secondary text-secondary-foreground">IWAI Certified</Badge>
+            <Badge variant="default" className="bg-primary text-primary-foreground">IWAI Certified</Badge>
             <div className="flex items-center gap-2 text-sm text-muted-foreground">
               <Shield className="w-4 h-4 text-secondary" />
               <span>Enterprise Security</span>
@@ -197,7 +197,7 @@ const Index = () => {
       {/* Problem/Solution Section */}
       <section className="py-20 px-6 bg-card">
         <div className="container mx-auto max-w-6xl text-center mb-16">
-          <Badge variant="secondary" className="mb-6 bg-secondary/10 text-secondary">The Challenge</Badge>
+          <Badge variant="default" className="mb-6 bg-primary text-primary-foreground">The Challenge</Badge>
           <h2 className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
             The Problem Isn't Your Expertise. It's Your Delivery.
           </h2>
@@ -324,7 +324,7 @@ const Index = () => {
       <section id="process" className="py-20 px-6 bg-card">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
-            <Badge variant="secondary" className="mb-4 bg-secondary text-secondary-foreground">Our Process</Badge>
+            <Badge variant="default" className="mb-4 bg-primary text-primary-foreground">Our Process</Badge>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
               A Clear Path from Strategy to Scalable Growth
             </h2>
@@ -380,7 +380,7 @@ const Index = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground mb-2">{result.client}</p>
-                  <Badge variant="secondary" className="text-xs bg-secondary/10 text-secondary">{result.industry}</Badge>
+                  <Badge variant="default" className="text-xs bg-primary text-primary-foreground">{result.industry}</Badge>
                 </CardContent>
               </Card>)}
           </div>
@@ -402,7 +402,7 @@ const Index = () => {
       <section id="testimonials" className="py-20 px-6 bg-card">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
-            <Badge variant="secondary" className="mb-4 bg-secondary text-secondary-foreground">Client Success</Badge>
+            <Badge variant="default" className="mb-4 bg-primary text-primary-foreground">Client Success</Badge>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
               What Our Partners Say
             </h2>
