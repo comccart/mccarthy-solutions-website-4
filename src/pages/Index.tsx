@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Download, ExternalLink, Star, CheckCircle2, TrendingUp, Users, Zap, Target, BarChart3, Shield, Award, Clock, ArrowRight, Sparkles, Bot, GraduationCap, Workflow, LineChart } from "lucide-react";
+import iwaiBadge from "@/assets/iwai-certified-badge.png";
 const Index = () => {
   const logos = ["Kajabi", "Zapier", "ADHD in Midlife", "AIRT", "Dockroach", "Storysphere Central", "Teach Elevate", "Partner Co"];
   const services = [{
@@ -105,15 +106,7 @@ const Index = () => {
               </div>
               <span className="text-sm text-secondary font-medium">5.0</span>
             </div>
-            <Badge variant="default" className="bg-secondary text-secondary-foreground">IWAI Certified</Badge>
-            <div className="flex items-center gap-2 text-sm text-muted-foreground">
-              <Shield className="w-4 h-4 text-secondary" />
-              <span>Enterprise Security</span>
-            </div>
-            <div className="flex items-center gap-2 text-sm text-muted-foreground">
-              <Award className="w-4 h-4 text-secondary" />
-              <span>ISO Compliant</span>
-            </div>
+            <img src={iwaiBadge} alt="IWAI Certified AI Consultant" className="h-16" />
           </div>
 
           {/* Hero Text */}
