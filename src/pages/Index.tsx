@@ -127,13 +127,6 @@ const Index = () => {
         <div className="container mx-auto max-w-6xl">
           {/* Trust Badges */}
           <div className="flex flex-wrap items-center justify-center gap-6 mb-12">
-            <div className="flex items-center gap-2">
-              <img src="https://logo.clearbit.com/clutch.co" alt="Clutch" className="h-8" />
-              <div className="flex gap-1">
-                {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 fill-primary text-primary" />)}
-              </div>
-              <span className="text-sm text-secondary font-medium">5.0</span>
-            </div>
             <div className="flex flex-col items-center gap-3">
               <img src={iwaiLogo} alt="Innovating with AI" className="h-12" />
               <span className="text-base font-semibold text-muted-foreground">IWAI Certified</span>
@@ -194,7 +187,7 @@ const Index = () => {
                   <img 
                     src={logo.image} 
                     alt={logo.name}
-                    className="h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100"
+                    className="h-12 w-auto object-contain transition-all"
                   />
                 </div>
               ))}
