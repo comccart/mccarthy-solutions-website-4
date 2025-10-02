@@ -351,7 +351,12 @@ const Index = () => {
           </div>
 
           <div className="text-center mt-12">
-            <Button size="lg" variant="default" className="bg-primary text-primary-foreground hover:bg-primary/90 gap-2">
+            <Button 
+              size="lg" 
+              variant="default" 
+              className="bg-primary text-primary-foreground hover:bg-primary/90 gap-2"
+              onClick={() => window.open('https://calendar.app.google/PaVwZ8ZxYX5SVBJT8', '_blank')}
+            >
               Start Your Journey
               <ArrowRight className="w-4 h-4" />
             </Button>
