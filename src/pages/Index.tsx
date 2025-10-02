@@ -237,7 +237,7 @@ AI can help you do it better.</div>
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
             <Badge variant="default" className="mb-4 bg-primary text-primary-foreground">Our Services</Badge>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">Comprehensive AI solutions</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">What can we do together?</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               From automation to upskilling, we deliver end-to-end AI solutions that transform how you operate and scale.
             </p>
