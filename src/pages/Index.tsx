@@ -448,8 +448,8 @@ const Index = () => {
               { name: "Ramon Ray", image: ramonRayImage },
               { name: "Bernadette Jiwa", image: bernadetteJiwaImage }
             ].map((person, i) => (
-              <div key={i} className="flex flex-col items-center text-center p-6 rounded-lg border-2 border-primary/20 hover:border-primary/50 transition-all">
-                <img src={person.image} alt={person.name} className="w-24 h-24 rounded-full object-cover mb-4" />
+              <div key={i} className="flex flex-col items-center text-center p-4 rounded-lg border-2 border-primary/20 hover:border-primary/50 transition-all">
+                <img src={person.image} alt={person.name} className="w-40 h-40 rounded-full object-cover mb-4" />
                 <p className="font-semibold text-foreground">{person.name}</p>
               </div>
             ))}
