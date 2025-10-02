@@ -348,7 +348,7 @@ const Index = () => {
           <div className="text-center mb-16">
             <Badge variant="default" className="mb-4 bg-primary text-primary-foreground">Proven Results</Badge>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-              Real Results from Real People
+              Real results from real people.
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Here's what happens when consultants and leaders work with AI the right way.
