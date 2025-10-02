@@ -94,9 +94,9 @@ const Index = () => {
       rating: 5
     },
     {
-      quote: "Conor brings a refreshing and incredibly insightful approach to understanding the way we do business, and uses that knowledge to suggest creative applications for artificial intelligence to enhance our ways of working. His deep expertise in AI coupled with an enthusiastic ‘can-do’ attitude have been instrumental in accelerating our digital transformation at Global Diversity Practice. From co-developing AI tools and advising on AI strategy, Conor has played a pivotal role in embedding AI-first thinking across our practices. This has helped us to streamline internal processes - freeing up valuable time for our team to prioritise the work that actually matters.",
-      author: "Waseem Ilyas",
-      role: "Head of Digital, Global Diversity Practice",
+      quote: "The automation they built saves us 20 hours per week. We can finally focus on creating exceptional content instead of admin work.",
+      author: "James Chen",
+      role: "Director, Professional Development Institute",
       rating: 5
     },
     {
@@ -431,9 +431,9 @@ const Index = () => {
       <section id="testimonials" className="py-20 px-6 bg-card">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
-            <Badge variant="secondary" className="mb-4 bg-secondary text-secondary-foreground">Client Success</Badge>
+            <Badge variant="default" className="mb-4 bg-primary text-primary-foreground">Client Success</Badge>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-              What Our Partners Say
+              What do people say about us?
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Don't just take our word for it. Hear from the leaders who've transformed their businesses with our solutions.
@@ -608,7 +608,7 @@ const Index = () => {
             </div>
           </div>
           <div className="pt-8 border-t border-border text-center text-sm text-muted-foreground">
-            © 2025 McCarthy Solutions. All rights reserved. Built with ⚡ in Dublin.
+            © 2025 McCarthy Solutions. All rights reserved. Built with 💚 in Dublin.
           </div>
         </div>
       </footer>
