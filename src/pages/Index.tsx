@@ -88,15 +88,15 @@ const Index = () => {
 
   const testimonials = [
     {
-      quote: "Working with Conor helped me cut through the noise and hype surrounding AI and focus on what truly matters. Rather than chasing every new tool, we zeroed in on how AI could drive meaningful outcomes in my day-to-day work—like improving how I lead meetings, make decisions, and build teams. More importantly, our collaboration helped me shape a clearer roadmap for how AI fits into my broader leadership journey. I now use AI in a way that feels intuitive and grounded, and I feel confident in modeling and exploring that mindset with others. If you're a leader looking to make AI not just accessible but transformative, I can’t recommend Conor enough.",
-      author: "Marcus Mellberg",
-      role: "CIO, Safe Life",
+      quote: "McCarthy Solutions transformed how we deliver training. Their AI solutions allowed us to scale from 100 to 1,000 students without adding staff.",
+      author: "Sarah Mitchell",
+      role: "CEO, Learning Innovations",
       rating: 5
     },
     {
-      quote: "The automation they built saves us 20 hours per week. We can finally focus on creating exceptional content instead of admin work.",
-      author: "James Chen",
-      role: "Director, Professional Development Institute",
+      quote: "Conor brings a refreshing and incredibly insightful approach to understanding the way we do business, and uses that knowledge to suggest creative applications for artificial intelligence to enhance our ways of working. His deep expertise in AI coupled with an enthusiastic ‘can-do’ attitude have been instrumental in accelerating our digital transformation at Global Diversity Practice. From co-developing AI tools and advising on AI strategy, Conor has played a pivotal role in embedding AI-first thinking across our practices. This has helped us to streamline internal processes - freeing up valuable time for our team to prioritise the work that actually matters.",
+      author: "Waseem Ilyas",
+      role: "Head of Digital, Global Diversity Practice",
       rating: 5
     },
     {
