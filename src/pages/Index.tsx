@@ -421,7 +421,7 @@ const Index = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-              Built on Trust and Experience
+              Built on trust and experience.
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               People I've collaborated with.
