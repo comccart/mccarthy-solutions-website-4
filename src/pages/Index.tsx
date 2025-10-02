@@ -3,154 +3,95 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { 
-  Download, ExternalLink, Star, CheckCircle2, TrendingUp, Users, 
-  Zap, Target, BarChart3, Shield, Award, Clock, ArrowRight,
-  Sparkles, Bot, GraduationCap, Workflow, LineChart
-} from "lucide-react";
-
+import { Download, ExternalLink, Star, CheckCircle2, TrendingUp, Users, Zap, Target, BarChart3, Shield, Award, Clock, ArrowRight, Sparkles, Bot, GraduationCap, Workflow, LineChart } from "lucide-react";
 const Index = () => {
-  const logos = [
-    "Kajabi", "Zapier", "ADHD in Midlife", "AIRT", "Dockroach", 
-    "Storysphere Central", "Teach Elevate", "Partner Co"
-  ];
-
-  const services = [
-    {
-      icon: Bot,
-      title: "AI-Powered Call Center",
-      description: "Intelligent automation that handles customer inquiries 24/7, reducing response times by 80% while maintaining personalized service.",
-      benefits: ["24/7 Availability", "80% Cost Reduction", "Natural Conversations"]
-    },
-    {
-      icon: GraduationCap,
-      title: "AI Training & Upskilling",
-      description: "Transform your team with customized AI training programs that boost productivity and future-proof your workforce.",
-      benefits: ["Custom Curricula", "Hands-on Learning", "Ongoing Support"]
-    },
-    {
-      icon: Workflow,
-      title: "AI-Powered Automation",
-      description: "Streamline operations with intelligent workflows that eliminate repetitive tasks and amplify team efficiency.",
-      benefits: ["Process Optimization", "Workflow Integration", "Scalable Solutions"]
-    },
-    {
-      icon: Sparkles,
-      title: "Custom AI Solutions",
-      description: "Bespoke AI systems designed specifically for your business challenges, from data analysis to predictive modeling.",
-      benefits: ["Tailored Development", "Enterprise-Grade", "Full Integration"]
-    }
-  ];
-
-  const processSteps = [
-    {
-      number: "01",
-      title: "Discovery & Strategy",
-      description: "We analyze your business challenges and identify high-impact AI opportunities."
-    },
-    {
-      number: "02",
-      title: "Custom Development",
-      description: "Our team builds tailored AI solutions that integrate seamlessly with your systems."
-    },
-    {
-      number: "03",
-      title: "Training & Implementation",
-      description: "We upskill your team and ensure smooth adoption across your organization."
-    },
-    {
-      number: "04",
-      title: "Scale & Optimize",
-      description: "Continuous monitoring and optimization to maximize ROI and drive growth."
-    }
-  ];
-
-  const results = [
-    {
-      client: "Professional Training Co.",
-      metric: "300%",
-      description: "Increase in course completion rates",
-      industry: "EdTech"
-    },
-    {
-      client: "Learning Solutions Ltd.",
-      metric: "80%",
-      description: "Reduction in administrative overhead",
-      industry: "Corporate Training"
-    },
-    {
-      client: "Skill Development Group",
-      metric: "5x",
-      description: "Faster content creation workflow",
-      industry: "Professional Services"
-    }
-  ];
-
-  const testimonials = [
-    {
-      quote: "McCarthy Solutions transformed how we deliver training. Their AI solutions allowed us to scale from 100 to 1,000 students without adding staff.",
-      author: "Sarah Mitchell",
-      role: "CEO, Learning Innovations",
-      rating: 5
-    },
-    {
-      quote: "The automation they built saves us 20 hours per week. We can finally focus on creating exceptional content instead of admin work.",
-      author: "James Chen",
-      role: "Director, Professional Development Institute",
-      rating: 5
-    },
-    {
-      quote: "Working with McCarthy Solutions was seamless. They understood our challenges and delivered solutions that exceeded our expectations.",
-      author: "Emma Thompson",
-      role: "Founder, Skills Academy",
-      rating: 5
-    }
-  ];
-
-  const faqs = [
-    {
-      question: "How long does implementation typically take?",
-      answer: "Most projects are completed within 4-12 weeks, depending on complexity. We start showing results within the first month through our agile development approach."
-    },
-    {
-      question: "Do we need technical expertise to use your solutions?",
-      answer: "Not at all. We design our solutions to be user-friendly and provide comprehensive training. Our team handles all technical aspects, so you can focus on your business."
-    },
-    {
-      question: "How do you ensure data security?",
-      answer: "We implement enterprise-grade security protocols, including encryption, secure APIs, and compliance with GDPR and industry standards. Your data security is our top priority."
-    },
-    {
-      question: "What kind of ROI can we expect?",
-      answer: "Our clients typically see 3-5x ROI within the first year through increased efficiency, reduced costs, and improved scalability. We provide detailed ROI projections during our strategy phase."
-    }
-  ];
-
-  return (
-    <div className="min-h-screen bg-background">
+  const logos = ["Kajabi", "Zapier", "ADHD in Midlife", "AIRT", "Dockroach", "Storysphere Central", "Teach Elevate", "Partner Co"];
+  const services = [{
+    icon: Bot,
+    title: "AI-Powered Call Center",
+    description: "Intelligent automation that handles customer inquiries 24/7, reducing response times by 80% while maintaining personalized service.",
+    benefits: ["24/7 Availability", "80% Cost Reduction", "Natural Conversations"]
+  }, {
+    icon: GraduationCap,
+    title: "AI Training & Upskilling",
+    description: "Transform your team with customized AI training programs that boost productivity and future-proof your workforce.",
+    benefits: ["Custom Curricula", "Hands-on Learning", "Ongoing Support"]
+  }, {
+    icon: Workflow,
+    title: "AI-Powered Automation",
+    description: "Streamline operations with intelligent workflows that eliminate repetitive tasks and amplify team efficiency.",
+    benefits: ["Process Optimization", "Workflow Integration", "Scalable Solutions"]
+  }, {
+    icon: Sparkles,
+    title: "Custom AI Solutions",
+    description: "Bespoke AI systems designed specifically for your business challenges, from data analysis to predictive modeling.",
+    benefits: ["Tailored Development", "Enterprise-Grade", "Full Integration"]
+  }];
+  const processSteps = [{
+    number: "01",
+    title: "Discovery & Strategy",
+    description: "We analyze your business challenges and identify high-impact AI opportunities."
+  }, {
+    number: "02",
+    title: "Custom Development",
+    description: "Our team builds tailored AI solutions that integrate seamlessly with your systems."
+  }, {
+    number: "03",
+    title: "Training & Implementation",
+    description: "We upskill your team and ensure smooth adoption across your organization."
+  }, {
+    number: "04",
+    title: "Scale & Optimize",
+    description: "Continuous monitoring and optimization to maximize ROI and drive growth."
+  }];
+  const results = [{
+    client: "Professional Training Co.",
+    metric: "300%",
+    description: "Increase in course completion rates",
+    industry: "EdTech"
+  }, {
+    client: "Learning Solutions Ltd.",
+    metric: "80%",
+    description: "Reduction in administrative overhead",
+    industry: "Corporate Training"
+  }, {
+    client: "Skill Development Group",
+    metric: "5x",
+    description: "Faster content creation workflow",
+    industry: "Professional Services"
+  }];
+  const testimonials = [{
+    quote: "McCarthy Solutions transformed how we deliver training. Their AI solutions allowed us to scale from 100 to 1,000 students without adding staff.",
+    author: "Sarah Mitchell",
+    role: "CEO, Learning Innovations",
+    rating: 5
+  }, {
+    quote: "The automation they built saves us 20 hours per week. We can finally focus on creating exceptional content instead of admin work.",
+    author: "James Chen",
+    role: "Director, Professional Development Institute",
+    rating: 5
+  }, {
+    quote: "Working with McCarthy Solutions was seamless. They understood our challenges and delivered solutions that exceeded our expectations.",
+    author: "Emma Thompson",
+    role: "Founder, Skills Academy",
+    rating: 5
+  }];
+  const faqs = [{
+    question: "How long does implementation typically take?",
+    answer: "Most projects are completed within 4-12 weeks, depending on complexity. We start showing results within the first month through our agile development approach."
+  }, {
+    question: "Do we need technical expertise to use your solutions?",
+    answer: "Not at all. We design our solutions to be user-friendly and provide comprehensive training. Our team handles all technical aspects, so you can focus on your business."
+  }, {
+    question: "How do you ensure data security?",
+    answer: "We implement enterprise-grade security protocols, including encryption, secure APIs, and compliance with GDPR and industry standards. Your data security is our top priority."
+  }, {
+    question: "What kind of ROI can we expect?",
+    answer: "Our clients typically see 3-5x ROI within the first year through increased efficiency, reduced costs, and improved scalability. We provide detailed ROI projections during our strategy phase."
+  }];
+  return <div className="min-h-screen bg-background">
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
-        <div className="container mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2">
-              <Zap className="w-6 h-6 text-primary" />
-              <div className="text-2xl font-bold text-foreground">McCarthy Solutions</div>
-            </div>
-            
-            <div className="hidden md:flex items-center gap-8">
-              <a href="#services" className="text-foreground hover:text-accent transition-colors">Services</a>
-              <a href="#process" className="text-foreground hover:text-accent transition-colors">Process</a>
-              <a href="#results" className="text-foreground hover:text-accent transition-colors">Results</a>
-              <a href="#testimonials" className="text-foreground hover:text-accent transition-colors">Testimonials</a>
-              <Link to="/blog" className="text-foreground hover:text-accent transition-colors">Blog</Link>
-            </div>
-
-            <Button variant="default" size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg">
-              Book Free Strategy Call
-            </Button>
-          </div>
-        </div>
-      </nav>
+      
 
       {/* Enhanced Hero Section */}
       <section className="pt-32 pb-20 px-6">
@@ -160,9 +101,7 @@ const Index = () => {
             <div className="flex items-center gap-2">
               <img src="https://logo.clearbit.com/clutch.co" alt="Clutch" className="h-8" />
               <div className="flex gap-1">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-4 h-4 fill-primary text-primary" />
-                ))}
+                {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 fill-primary text-primary" />)}
               </div>
               <span className="text-sm text-secondary font-medium">5.0</span>
             </div>
@@ -194,7 +133,8 @@ const Index = () => {
           <div className="flex flex-wrap items-center justify-center gap-8 mb-12">
             <div className="text-center">
               <div className="text-3xl font-bold text-primary">300%</div>
-              <div className="text-sm text-muted-foreground">Avg. Growth</div>
+              <div className="text-sm text-muted-foreground">You know your work.
+AI can help you do it better.</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-primary">50+</div>
@@ -226,14 +166,9 @@ const Index = () => {
           {/* Logo Carousel */}
           <div className="relative overflow-hidden py-8">
             <div className="flex gap-12 animate-scroll">
-              {[...logos, ...logos].map((logo, i) => (
-                <div 
-                  key={i}
-                  className="flex-shrink-0 px-6 py-4 bg-card rounded-lg shadow-sm border border-border min-w-[180px] flex items-center justify-center"
-                >
+              {[...logos, ...logos].map((logo, i) => <div key={i} className="flex-shrink-0 px-6 py-4 bg-card rounded-lg shadow-sm border border-border min-w-[180px] flex items-center justify-center">
                   <span className="text-foreground font-medium">{logo}</span>
-                </div>
-              ))}
+                </div>)}
             </div>
           </div>
         </div>
@@ -307,17 +242,14 @@ const Index = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
             <Badge variant="default" className="mb-4 bg-primary text-primary-foreground">Our Services</Badge>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-              Comprehensive AI Solutions for Training Companies
-            </h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">Comprehensive AI solutions</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               From automation to upskilling, we deliver end-to-end AI solutions that transform how you operate and scale.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            {services.map((service, i) => (
-              <Card key={i} className="border-2 hover:border-primary/50 transition-all hover:shadow-lg">
+            {services.map((service, i) => <Card key={i} className="border-2 hover:border-primary/50 transition-all hover:shadow-lg">
                 <CardHeader>
                   <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
                     <service.icon className="w-6 h-6 text-primary" />
@@ -327,20 +259,17 @@ const Index = () => {
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-3 mb-6">
-                    {service.benefits.map((benefit, j) => (
-                      <div key={j} className="flex items-center gap-2">
+                    {service.benefits.map((benefit, j) => <div key={j} className="flex items-center gap-2">
                         <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0" />
                         <span className="text-sm text-muted-foreground">{benefit}</span>
-                      </div>
-                    ))}
+                      </div>)}
                   </div>
                   <a href="#contact" className="text-accent hover:text-accent/80 font-medium inline-flex items-center gap-2">
                     Learn More
                     <ArrowRight className="w-4 h-4" />
                   </a>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -363,8 +292,7 @@ const Index = () => {
             <div className="hidden md:block absolute top-16 left-[10%] right-[10%] h-0.5 bg-gradient-to-r from-primary via-secondary to-primary opacity-30" />
             
             <div className="grid md:grid-cols-4 gap-8">
-              {processSteps.map((step, i) => (
-                <div key={i} className="relative">
+              {processSteps.map((step, i) => <div key={i} className="relative">
                   <div className="flex flex-col items-center text-center">
                     <div className="w-16 h-16 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-2xl font-bold mb-4 relative z-10 shadow-lg">
                       {step.number}
@@ -372,8 +300,7 @@ const Index = () => {
                     <h3 className="text-xl font-bold mb-3 text-foreground">{step.title}</h3>
                     <p className="text-sm text-muted-foreground">{step.description}</p>
                   </div>
-                </div>
-              ))}
+                </div>)}
             </div>
           </div>
 
@@ -400,8 +327,7 @@ const Index = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
-            {results.map((result, i) => (
-              <Card key={i} className="text-center border-2 hover:border-primary/50 transition-all">
+            {results.map((result, i) => <Card key={i} className="text-center border-2 hover:border-primary/50 transition-all">
                 <CardHeader>
                   <div className="text-5xl font-bold text-primary mb-2">{result.metric}</div>
                   <CardTitle className="text-lg text-foreground">{result.description}</CardTitle>
@@ -410,8 +336,7 @@ const Index = () => {
                   <p className="text-sm text-muted-foreground mb-2">{result.client}</p>
                   <Badge variant="secondary" className="text-xs bg-secondary/10 text-secondary">{result.industry}</Badge>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
 
           <div className="flex flex-wrap justify-center gap-4">
@@ -441,13 +366,10 @@ const Index = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, i) => (
-              <Card key={i} className="border-2 hover:shadow-lg transition-all">
+            {testimonials.map((testimonial, i) => <Card key={i} className="border-2 hover:shadow-lg transition-all">
                 <CardHeader>
                   <div className="flex gap-1 mb-4">
-                    {[...Array(testimonial.rating)].map((_, j) => (
-                      <Star key={j} className="w-5 h-5 fill-primary text-primary" />
-                    ))}
+                    {[...Array(testimonial.rating)].map((_, j) => <Star key={j} className="w-5 h-5 fill-primary text-primary" />)}
                   </div>
                   <CardDescription className="text-base text-foreground italic">
                     "{testimonial.quote}"
@@ -464,8 +386,7 @@ const Index = () => {
                     </div>
                   </div>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -483,17 +404,22 @@ const Index = () => {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {[
-              { icon: Shield, label: "Enterprise Security" },
-              { icon: Award, label: "IWAI Certified" },
-              { icon: CheckCircle2, label: "ISO Compliant" },
-              { icon: Target, label: "GDPR Ready" }
-            ].map((cert, i) => (
-              <div key={i} className="flex flex-col items-center text-center p-6 rounded-lg border-2 border-primary/20 hover:border-primary/50 transition-all">
+            {[{
+            icon: Shield,
+            label: "Enterprise Security"
+          }, {
+            icon: Award,
+            label: "IWAI Certified"
+          }, {
+            icon: CheckCircle2,
+            label: "ISO Compliant"
+          }, {
+            icon: Target,
+            label: "GDPR Ready"
+          }].map((cert, i) => <div key={i} className="flex flex-col items-center text-center p-6 rounded-lg border-2 border-primary/20 hover:border-primary/50 transition-all">
                 <cert.icon className="w-12 h-12 text-primary mb-4" />
                 <p className="font-semibold text-foreground">{cert.label}</p>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </section>
@@ -512,16 +438,14 @@ const Index = () => {
           </div>
 
           <Accordion type="single" collapsible className="w-full space-y-4">
-            {faqs.map((faq, i) => (
-              <AccordionItem key={i} value={`item-${i}`} className="border-2 border-border rounded-lg px-6">
+            {faqs.map((faq, i) => <AccordionItem key={i} value={`item-${i}`} className="border-2 border-border rounded-lg px-6">
                 <AccordionTrigger className="text-left font-semibold text-foreground hover:text-primary">
                   {faq.question}
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground">
                   {faq.answer}
                 </AccordionContent>
-              </AccordionItem>
-            ))}
+              </AccordionItem>)}
           </Accordion>
         </div>
       </section>
@@ -608,7 +532,7 @@ const Index = () => {
             </div>
           </div>
           <div className="pt-8 border-t border-border text-center text-sm text-muted-foreground">
-            © 2025 McCarthy Solutions. All rights reserved. Built with 💚 in Dublin.
+            © 2025 McCarthy Solutions. All rights reserved. Built with ⚡ in Dublin.
           </div>
         </div>
       </footer>
@@ -642,8 +566,6 @@ const Index = () => {
           }
         }
       `}</style>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
