@@ -5,6 +5,9 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Download, ExternalLink, Star, CheckCircle2, TrendingUp, Users, Zap, Target, BarChart3, Shield, Award, Clock, ArrowRight, Sparkles, Bot, GraduationCap, Workflow, LineChart } from "lucide-react";
 import iwaiLogo from "@/assets/iwai-logo-new.png";
+import sethGodin from "@/assets/seth-godin.jpg";
+import bernadette from "@/assets/bernadette-jiwa.jpg";
+import ramonRay from "@/assets/ramon-ray.jpg";
 const Index = () => {
   const logos = ["Seth Godin", "Marie Forleo", "Bernadette Jiwa", "Ramon Ray", "The Unstuck Book", "Leading Consultants", "SME Leaders", "AI Pioneers"];
   const services = [{
@@ -428,17 +431,18 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {[{
-            name: "Collaborator 1"
-          }, {
-            name: "Collaborator 2"
-          }, {
-            name: "Collaborator 3"
-          }, {
-            name: "Collaborator 4"
-          }].map((person, i) => <div key={i} className="flex flex-col items-center text-center p-6 rounded-lg border-2 border-primary/20 hover:border-primary/50 transition-all">
-                <img src="/placeholder.svg" alt={person.name} className="w-24 h-24 rounded-full object-cover mb-4" />
+              name: "Seth Godin",
+              image: sethGodin
+            }, {
+              name: "Bernadette Jiwa",
+              image: bernadette
+            }, {
+              name: "Ramon Ray",
+              image: ramonRay
+            }].map((person, i) => <div key={i} className="flex flex-col items-center text-center p-6 rounded-lg border-2 border-primary/20 hover:border-primary/50 transition-all">
+                <img src={person.image} alt={person.name} className="w-24 h-24 rounded-full object-cover mb-4" />
                 <p className="font-semibold text-foreground">{person.name}</p>
               </div>)}
           </div>
