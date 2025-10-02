@@ -15,7 +15,7 @@ const Index = () => {
     benefits: ["Practical Learning", "No Jargon", "Real-World Applications"]
   }, {
     icon: Workflow,
-    title: "Make AI Part of Your Work, Not a Distraction",
+    title: "Make AI part of your work, not a distraction",
     description: "Advisory and strategy services that integrate AI into your workflows seamlessly.",
     benefits: ["Strategic Planning", "Seamless Integration", "Focused Implementation"]
   }, {
