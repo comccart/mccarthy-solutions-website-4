@@ -8,8 +8,19 @@ import iwaiLogo from "@/assets/iwai-logo-new.png";
 import sethGodin from "@/assets/seth-godin.jpg";
 import bernadette from "@/assets/bernadette-jiwa.jpg";
 import ramonRay from "@/assets/ramon-ray.jpg";
+import altmbaLogo from "@/assets/altmba-logo.jpg";
+import gdpLogo from "@/assets/gdp-logo.jpg";
+import inclusionIntelligenceLogo from "@/assets/inclusion-intelligence-logo.png";
+import safelifeLogo from "@/assets/safelife-logo.jpg";
+import techstarsLogo from "@/assets/techstars-logo.svg";
 const Index = () => {
-  const logos = ["Seth Godin", "Marie Forleo", "Bernadette Jiwa", "Ramon Ray", "The Unstuck Book", "Leading Consultants", "SME Leaders", "AI Pioneers"];
+  const logos = [
+    { name: "altMBA", image: altmbaLogo },
+    { name: "Global Diversity Practice", image: gdpLogo },
+    { name: "Inclusion Intelligence", image: inclusionIntelligenceLogo },
+    { name: "Safe Life", image: safelifeLogo },
+    { name: "Techstars", image: techstarsLogo }
+  ];
   const services = [{
     icon: GraduationCap,
     title: "Learn AI with confidence",
@@ -181,7 +192,7 @@ const Index = () => {
           <div className="relative overflow-hidden py-8">
             <div className="flex gap-12 animate-scroll">
               {[...logos, ...logos].map((logo, i) => <div key={i} className="flex-shrink-0 px-6 py-4 bg-card rounded-lg shadow-sm border border-border min-w-[180px] flex items-center justify-center">
-                  {i % 2 === 0 ? <span className="text-foreground font-medium">{logo}</span> : <img src="/placeholder.svg" alt={`${logo} logo`} className="h-8 w-auto object-contain" />}
+                  <img src={logo.image} alt={`${logo.name} logo`} className="h-8 w-auto object-contain" />
                 </div>)}
             </div>
           </div>
