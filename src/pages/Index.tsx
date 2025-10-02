@@ -138,8 +138,8 @@ const Index = () => {
 
           {/* Hero Text */}
           <h1 className="text-5xl md:text-7xl font-bold text-center mb-8 leading-tight text-foreground">
-            AI is not a tech stack.{" "}
-            <span className="text-primary animate-fade-in">It's a life skill.</span>
+            Less admin. More impact.{" "}
+            <span className="text-primary">Powered by AI.</span>
           </h1>
 
           <p className="text-xl text-muted-foreground text-center max-w-3xl mx-auto mb-4">
