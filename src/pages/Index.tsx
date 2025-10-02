@@ -3,29 +3,24 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Download, ExternalLink, Star, CheckCircle2, TrendingUp, Users, Zap, Target, BarChart3, Shield, Award, Clock, ArrowRight, Sparkles, Bot, GraduationCap, Workflow, LineChart } from "lucide-react";
+import { Download, ExternalLink, Star, CheckCircle2, TrendingUp, Users, Zap, Target, BarChart3, Shield, Award, Clock, ArrowRight, Sparkles, Bot, GraduationCap, Workflow, LineChart, Lightbulb, Rocket } from "lucide-react";
 const Index = () => {
   const logos = ["Kajabi", "Zapier", "ADHD in Midlife", "AIRT", "Dockroach", "Storysphere Central", "Teach Elevate", "Partner Co"];
   const services = [{
-    icon: Bot,
-    title: "AI-Powered Call Center",
-    description: "Intelligent automation that handles customer inquiries 24/7, reducing response times by 80% while maintaining personalized service.",
-    benefits: ["24/7 Availability", "80% Cost Reduction", "Natural Conversations"]
-  }, {
     icon: GraduationCap,
-    title: "AI Training & Upskilling",
-    description: "Transform your team with customized AI training programs that boost productivity and future-proof your workforce.",
-    benefits: ["Custom Curricula", "Hands-on Learning", "Ongoing Support"]
+    title: "Learn AI with confidence",
+    description: "Help leaders and teams build practical AI literacy through clear, hands-on training.",
+    benefits: ["Interactive workshops", "Real-world examples", "Ongoing support"]
   }, {
-    icon: Workflow,
-    title: "AI-Powered Automation",
-    description: "Streamline operations with intelligent workflows that eliminate repetitive tasks and amplify team efficiency.",
-    benefits: ["Process Optimization", "Workflow Integration", "Scalable Solutions"]
+    icon: Lightbulb,
+    title: "Make AI part of your work, not a distraction",
+    description: "Strategic guidance to help you decide where AI fits and how it adds value.",
+    benefits: ["Tailored strategies", "Clear roadmaps", "Values-aligned advice"]
   }, {
-    icon: Sparkles,
-    title: "Custom AI Solutions",
-    description: "Bespoke AI systems designed specifically for your business challenges, from data analysis to predictive modeling.",
-    benefits: ["Tailored Development", "Enterprise-Grade", "Full Integration"]
+    icon: Rocket,
+    title: "See results with practical AI tools",
+    description: "Build and install simple AI systems that save time and scale your impact.",
+    benefits: ["Workflow automation", "Custom GPTs & assistants", "Integration with your tools"]
   }];
   const processSteps = [{
     number: "01",
@@ -248,7 +243,7 @@ AI can help you do it better.</div>
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             {services.map((service, i) => <Card key={i} className="border-2 hover:border-primary/50 transition-all hover:shadow-lg">
                 <CardHeader>
                   <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
