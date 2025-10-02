@@ -174,7 +174,7 @@ AI can help you do it better.</div>
         <div className="container mx-auto max-w-6xl">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Problem Side */}
-            <div className="space-y-6">
+            <div className="space-y-6 p-8 rounded-2xl bg-secondary/5 border-2 border-secondary/20">
               <Badge variant="secondary" className="bg-secondary/10 text-secondary">The Challenge</Badge>
               <h2 className="text-4xl font-bold text-foreground">
                 The Problem Isn't Your Expertise
