@@ -20,7 +20,7 @@ const Index = () => {
     benefits: ["Strategic Planning", "Seamless Integration", "Focused Implementation"]
   }, {
     icon: Sparkles,
-    title: "See Results with Practical AI Tools",
+    title: "See results with practical AI tools",
     description: "Implementation and automation that deliver measurable outcomes for your business.",
     benefits: ["Time Savings", "Improved Delivery", "Scalable Systems"]
   }];
