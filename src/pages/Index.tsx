@@ -38,7 +38,7 @@ const Index = () => {
     description: "Tools that fit your workflow. Training that makes sense."
   }, {
     number: "04",
-    title: "Measure What Matters",
+    title: "Measure what matters.",
     description: "Track real results. Adjust as you grow."
   }];
   const results = [{
