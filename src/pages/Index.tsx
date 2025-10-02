@@ -136,7 +136,7 @@ const Index = () => {
           </h1>
 
           <p className="text-xl text-muted-foreground text-center max-w-3xl mx-auto mb-4">
-            I help consultants and SME leaders save time, stay creative, and lead with integrity.
+            I help consultants and SME leaders dramatically improve performance, client delivery, and confidence by integrating AI that sticks.
           </p>
           
           <p className="text-2xl font-semibold text-center text-foreground mb-8">
