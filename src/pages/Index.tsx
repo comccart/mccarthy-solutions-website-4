@@ -67,9 +67,9 @@ const Index = () => {
     role: "Head of Digital, Global Diversity Practice",
     rating: 5
   }, {
-    quote: "McCarthy helped me change the way I deliver my services. My clients notice the difference.",
-    author: "Emma T.",
-    role: "Business Coach",
+    quote: "Conor is nothing short of a genius when it comes to AI. His unique ability to demystify complex concepts and explain them in a way that’s both engaging and easy to understand sets him apart from the crowd. His work helping us create our AI course was exceptional plus he's a joy to work with. His rare combination of academic depth and practical expertise makes him the go-to person for any AI-driven project. If you are looking for an invaluable partner to help you leverage AI for your business success, then Conor is your man.",
+    author: "Chris R.",
+    role: "CEO, 42Courses",
     rating: 5
   }];
   const faqs = [{
