@@ -145,16 +145,16 @@ const Index = () => {
           {/* Key Proof Points */}
           <div className="flex flex-wrap items-center justify-center gap-8 mb-12">
             <div className="text-center">
-              <div className="text-xl font-bold text-primary">Author</div>
-              <div className="text-sm text-muted-foreground">The Unstuck Book</div>
+              
+              
             </div>
             <div className="text-center">
-              <div className="text-xl font-bold text-primary">Collaborator</div>
-              <div className="text-sm text-muted-foreground">Seth Godin, Marie, Bernadette</div>
+              
+              
             </div>
             <div className="text-center">
-              <div className="text-xl font-bold text-primary">Results</div>
-              <div className="text-sm text-muted-foreground">Hours Saved, Better Delivery</div>
+              
+              
             </div>
           </div>
 
