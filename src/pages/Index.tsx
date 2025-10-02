@@ -5,89 +5,84 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Download, ExternalLink, Star, CheckCircle2, TrendingUp, Users, Zap, Target, BarChart3, Shield, Award, Clock, ArrowRight, Sparkles, Bot, GraduationCap, Workflow, LineChart } from "lucide-react";
 const Index = () => {
-  const logos = ["Kajabi", "Zapier", "ADHD in Midlife", "AIRT", "Dockroach", "Storysphere Central", "Teach Elevate", "Partner Co"];
+  const logos = ["Seth Godin", "Marie Forleo", "Bernadette Jiwa", "Ramon Ray", "The Unstuck Book", "Leading Consultants", "SME Leaders", "AI Pioneers"];
   const services = [{
-    icon: Bot,
-    title: "AI-Powered Call Center",
-    description: "Intelligent automation that handles customer inquiries 24/7, reducing response times by 80% while maintaining personalized service.",
-    benefits: ["24/7 Availability", "80% Cost Reduction", "Natural Conversations"]
-  }, {
     icon: GraduationCap,
-    title: "AI Training & Upskilling",
-    description: "Transform your team with customized AI training programs that boost productivity and future-proof your workforce.",
-    benefits: ["Custom Curricula", "Hands-on Learning", "Ongoing Support"]
+    title: "Learn AI with Confidence",
+    description: "Training and literacy programs that help you and your team understand AI without the overwhelm.",
+    benefits: ["Practical Learning", "No Jargon", "Real-World Applications"]
   }, {
     icon: Workflow,
-    title: "AI-Powered Automation",
-    description: "Streamline operations with intelligent workflows that eliminate repetitive tasks and amplify team efficiency.",
-    benefits: ["Process Optimization", "Workflow Integration", "Scalable Solutions"]
+    title: "Make AI Part of Your Work, Not a Distraction",
+    description: "Advisory and strategy services that integrate AI into your workflows seamlessly.",
+    benefits: ["Strategic Planning", "Seamless Integration", "Focused Implementation"]
   }, {
     icon: Sparkles,
-    title: "Custom AI Solutions",
-    description: "Bespoke AI systems designed specifically for your business challenges, from data analysis to predictive modeling.",
-    benefits: ["Tailored Development", "Enterprise-Grade", "Full Integration"]
+    title: "See Results with Practical AI Tools",
+    description: "Implementation and automation that deliver measurable outcomes for your business.",
+    benefits: ["Time Savings", "Improved Delivery", "Scalable Systems"]
   }];
   const processSteps = [{
     number: "01",
-    title: "Discovery & Strategy",
-    description: "We analyze your business challenges and identify high-impact AI opportunities."
+    title: "Understand Your Work",
+    description: "We listen. We learn what you do and where AI could help."
   }, {
     number: "02",
-    title: "Custom Development",
-    description: "Our team builds tailored AI solutions that integrate seamlessly with your systems."
+    title: "Build Your Strategy",
+    description: "Clear plan. Practical steps. No tech jargon."
   }, {
     number: "03",
-    title: "Training & Implementation",
-    description: "We upskill your team and ensure smooth adoption across your organization."
+    title: "Implement with Care",
+    description: "Tools that fit your workflow. Training that makes sense."
   }, {
     number: "04",
-    title: "Scale & Optimize",
-    description: "Continuous monitoring and optimization to maximize ROI and drive growth."
+    title: "Measure What Matters",
+    description: "Track real results. Adjust as you grow."
   }];
   const results = [{
-    client: "Professional Training Co.",
-    metric: "300%",
-    description: "Increase in course completion rates",
-    industry: "EdTech"
+    client: "Strategic Consulting Firm",
+    metric: "10+ hours",
+    description: "Saved weekly on admin tasks",
+    industry: "Consulting"
   }, {
-    client: "Learning Solutions Ltd.",
-    metric: "80%",
-    description: "Reduction in administrative overhead",
-    industry: "Corporate Training"
+    client: "Marketing Consultant",
+    metric: "3x",
+    description: "Content creation scaled",
+    industry: "Marketing"
   }, {
-    client: "Skill Development Group",
-    metric: "5x",
-    description: "Faster content creation workflow",
-    industry: "Professional Services"
+    client: "Leadership Coach",
+    metric: "Better",
+    description: "Client delivery systems",
+    industry: "Coaching"
   }];
   const testimonials = [{
-    quote: "McCarthy Solutions transformed how we deliver training. Their AI solutions allowed us to scale from 100 to 1,000 students without adding staff.",
-    author: "Sarah Mitchell",
-    role: "CEO, Learning Innovations",
+    quote: "This saved me hours each week. I can focus on clients instead of admin.",
+    author: "Sarah M.",
+    role: "Independent Consultant",
     rating: 5
   }, {
-    quote: "The automation they built saves us 20 hours per week. We can finally focus on creating exceptional content instead of admin work.",
-    author: "James Chen",
-    role: "Director, Professional Development Institute",
+    quote: "AI felt overwhelming until I worked with McCarthy. Now it's just part of how I work.",
+    author: "James C.",
+    role: "SME Owner",
     rating: 5
   }, {
-    quote: "Working with McCarthy Solutions was seamless. They understood our challenges and delivered solutions that exceeded our expectations.",
-    author: "Emma Thompson",
-    role: "Founder, Skills Academy",
+    quote: "McCarthy helped me change the way I deliver my services. My clients notice the difference.",
+    author: "Emma T.",
+    role: "Business Coach",
     rating: 5
   }];
   const faqs = [{
-    question: "How long does implementation typically take?",
-    answer: "Most projects are completed within 4-12 weeks, depending on complexity. We start showing results within the first month through our agile development approach."
+    question: "I'm not technical. Can I still use AI?",
+    answer: "Yes. AI is a life skill, not a tech stack. I teach it in plain language."
   }, {
-    question: "Do we need technical expertise to use your solutions?",
-    answer: "Not at all. We design our solutions to be user-friendly and provide comprehensive training. Our team handles all technical aspects, so you can focus on your business."
+    question: "How long until I see results?",
+    answer: "Most clients save time within the first week. Bigger projects take 4-8 weeks."
   }, {
-    question: "How do you ensure data security?",
-    answer: "We implement enterprise-grade security protocols, including encryption, secure APIs, and compliance with GDPR and industry standards. Your data security is our top priority."
+    question: "Do you work with solo consultants?",
+    answer: "Absolutely. I work with solo consultants, small teams, and SME leaders."
   }, {
-    question: "What kind of ROI can we expect?",
-    answer: "Our clients typically see 3-5x ROI within the first year through increased efficiency, reduced costs, and improved scalability. We provide detailed ROI projections during our strategy phase."
+    question: "What if I've tried AI and it didn't work?",
+    answer: "That's common. Most AI implementations fail because they're too complex. I keep it simple and practical."
   }];
   return <div className="min-h-screen bg-background">
       {/* Navigation */}
@@ -139,48 +134,48 @@ const Index = () => {
 
           {/* Hero Text */}
           <h1 className="text-5xl md:text-7xl font-bold text-center mb-8 leading-tight text-foreground">
-            Scale Your{" "}
-            <span className="text-primary animate-fade-in">Expertise.</span>
-            <br />
-            Amplify Your Impact.
+            AI is not a tech stack.{" "}
+            <span className="text-primary animate-fade-in">It's a life skill.</span>
           </h1>
 
-          <p className="text-xl text-muted-foreground text-center max-w-3xl mx-auto mb-8">
-            Dublin-based AI consultancy building intelligent automation and learning systems for professionals. 
-            Achieve scalable growth without increasing headcount.
+          <p className="text-xl text-muted-foreground text-center max-w-3xl mx-auto mb-4">
+            I help consultants and SME leaders save time, stay creative, and lead with integrity.
+          </p>
+          
+          <p className="text-2xl font-semibold text-center text-foreground mb-8">
+            Change the way you work.
           </p>
 
-          {/* Key Metrics */}
+          {/* Key Proof Points */}
           <div className="flex flex-wrap items-center justify-center gap-8 mb-12">
             <div className="text-center">
-              <div className="text-3xl font-bold text-primary">300%</div>
-              <div className="text-sm text-muted-foreground">Avg. Growth</div>
+              <div className="text-xl font-bold text-primary">Author</div>
+              <div className="text-sm text-muted-foreground">The Unstuck Book</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-primary">50+</div>
-              <div className="text-sm text-muted-foreground">Projects Delivered</div>
+              <div className="text-xl font-bold text-primary">Collaborator</div>
+              <div className="text-sm text-muted-foreground">Seth Godin, Marie, Bernadette</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-primary">98%</div>
-              <div className="text-sm text-muted-foreground">Client Satisfaction</div>
+              <div className="text-xl font-bold text-primary">Results</div>
+              <div className="text-sm text-muted-foreground">Hours Saved, Better Delivery</div>
             </div>
           </div>
 
           {/* CTA Buttons */}
           <div className="flex flex-wrap items-center justify-center gap-4 mb-20">
             <Button size="lg" variant="default" className="gap-2 bg-primary text-primary-foreground hover:bg-primary/90">
-              <Download className="w-4 h-4" />
-              Download AI Blueprint
+              Book Free Strategy Call
             </Button>
             <Button size="lg" variant="outline" className="gap-2 border-2 border-accent text-accent hover:bg-accent hover:text-accent-foreground">
-              See Our Results
+              Learn More
               <ExternalLink className="w-4 h-4" />
             </Button>
           </div>
 
           {/* Trust Badge */}
           <p className="text-center text-muted-foreground mb-8">
-            Trusted by Industry Leaders and Certified for Excellence
+            Trusted by Consultants and SME Leaders
           </p>
 
           {/* Logo Carousel */}
@@ -199,10 +194,10 @@ const Index = () => {
         <div className="container mx-auto max-w-6xl text-center mb-16">
           <Badge variant="default" className="mb-6 bg-primary text-primary-foreground">The Challenge</Badge>
           <h2 className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
-            The Problem Isn't Your Expertise. It's Your Delivery.
+            You Know Your Work. AI Can Help You Do It Better.
           </h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
-            Your growth is throttled by manual systems that don't scale and static content that fails to deliver provable results.
+            Most consultants and leaders waste time on tasks AI could handle. But AI feels complicated.
           </p>
         </div>
 
@@ -212,34 +207,26 @@ const Index = () => {
             <div className="p-8 rounded-2xl bg-muted/50 border border-border space-y-8">
               <div className="space-y-3">
                 <div className="flex items-center gap-3">
-                  <TrendingUp className="w-5 h-5 text-secondary" />
-                  <h3 className="text-xl font-bold text-foreground">Your Current State</h3>
-                </div>
-                <p className="text-sm text-muted-foreground">Manual & Fragmented</p>
-              </div>
-
-              <div className="space-y-3">
-                <div className="flex items-center gap-3">
                   <Clock className="w-5 h-5 text-secondary" />
-                  <h3 className="text-xl font-bold text-foreground">Severe Operational Drag</h3>
+                  <h3 className="text-xl font-bold text-foreground">Too Much Time on Admin</h3>
                 </div>
-                <p className="text-muted-foreground">Expert time is lost to repetitive admin, and manual tasks are throttling your growth.</p>
+                <p className="text-muted-foreground">Hours wasted on tasks that don't require your expertise.</p>
               </div>
 
               <div className="space-y-3">
                 <div className="flex items-center gap-3">
                   <Target className="w-5 h-5 text-secondary" />
-                  <h3 className="text-xl font-bold text-foreground">Static, "One-Size-Fits-All" Content</h3>
+                  <h3 className="text-xl font-bold text-foreground">AI Feels Overwhelming</h3>
                 </div>
-                <p className="text-muted-foreground">Outdated, generic content disengages learners and kills knowledge retention.</p>
+                <p className="text-muted-foreground">Too many tools. Too much jargon. No clear path forward.</p>
               </div>
 
               <div className="space-y-3">
                 <div className="flex items-center gap-3">
                   <BarChart3 className="w-5 h-5 text-secondary" />
-                  <h3 className="text-xl font-bold text-foreground">An Unproven Business Impact</h3>
+                  <h3 className="text-xl font-bold text-foreground">Hard to Measure Impact</h3>
                 </div>
-                <p className="text-muted-foreground">You're stuck reporting on vanity metrics, unable to prove the true ROI of your training.</p>
+                <p className="text-muted-foreground">You know you need to change, but don't know where to start.</p>
               </div>
             </div>
 
@@ -248,33 +235,33 @@ const Index = () => {
               <div className="space-y-3">
                 <div className="flex items-center gap-3">
                   <Zap className="w-5 h-5 text-secondary-foreground" />
-                  <h3 className="text-xl font-bold text-secondary-foreground">With McCarthy Solutions</h3>
+                  <h3 className="text-xl font-bold text-secondary-foreground">With AI Done Right</h3>
                 </div>
-                <p className="text-sm text-secondary-foreground/90">Automated & Intelligent</p>
+                <p className="text-sm text-secondary-foreground/90">Simple & Practical</p>
               </div>
 
               <div className="space-y-3">
                 <div className="flex items-center gap-3">
-                  <Zap className="w-5 h-5 text-secondary-foreground" />
-                  <h3 className="text-xl font-bold text-secondary-foreground">Scalable, Automated Operations</h3>
+                  <Clock className="w-5 h-5 text-secondary-foreground" />
+                  <h3 className="text-xl font-bold text-secondary-foreground">Save Hours Every Week</h3>
                 </div>
-                <p className="text-secondary-foreground/90">Scale your delivery without adding headcount. Automate your coaching workflows.</p>
+                <p className="text-secondary-foreground/90">Automate admin. Focus on what matters. Get time back.</p>
               </div>
 
               <div className="space-y-3">
                 <div className="flex items-center gap-3">
                   <Target className="w-5 h-5 text-secondary-foreground" />
-                  <h3 className="text-xl font-bold text-secondary-foreground">Dynamic, Personalized Learning</h3>
+                  <h3 className="text-xl font-bold text-secondary-foreground">Stay Creative</h3>
                 </div>
-                <p className="text-secondary-foreground/90">Turn static content into interactive experiences and personalized paths that boost engagement.</p>
+                <p className="text-secondary-foreground/90">Use AI to enhance your work, not replace your thinking.</p>
               </div>
 
               <div className="space-y-3">
                 <div className="flex items-center gap-3">
                   <LineChart className="w-5 h-5 text-secondary-foreground" />
-                  <h3 className="text-xl font-bold text-secondary-foreground">Clear, Data-Driven ROI</h3>
+                  <h3 className="text-xl font-bold text-secondary-foreground">Lead with Integrity</h3>
                 </div>
-                <p className="text-secondary-foreground/90">Prove your business impact with concrete data and reports your clients demand.</p>
+                <p className="text-secondary-foreground/90">Build systems that work for you and your clients.</p>
               </div>
             </div>
           </div>
@@ -287,14 +274,14 @@ const Index = () => {
           <div className="text-center mb-16">
             <Badge variant="default" className="mb-4 bg-primary text-primary-foreground">Our Services</Badge>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-              Comprehensive AI Solutions for Training Companies
+              How I Help
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              From automation to upskilling, we deliver end-to-end AI solutions that transform how you operate and scale.
+              Three ways to make AI work for you.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             {services.map((service, i) => <Card key={i} className="border-2 hover:border-primary/50 transition-all hover:shadow-lg">
                 <CardHeader>
                   <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
@@ -326,10 +313,10 @@ const Index = () => {
           <div className="text-center mb-16">
             <Badge variant="default" className="mb-4 bg-primary text-primary-foreground">Our Process</Badge>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-              A Clear Path from Strategy to Scalable Growth
+              How We Work Together
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              We follow a proven methodology that ensures successful implementation and measurable results.
+              Simple steps. Real results.
             </p>
           </div>
 
@@ -365,10 +352,10 @@ const Index = () => {
           <div className="text-center mb-16">
             <Badge variant="default" className="mb-4 bg-primary text-primary-foreground">Proven Results</Badge>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-              From Vision to Verifiable Results
+              Real Results from Real People
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Real outcomes from real clients. See how we've helped training companies transform their operations.
+              Here's what happens when consultants and leaders work with AI the right way.
             </p>
           </div>
 
@@ -386,12 +373,8 @@ const Index = () => {
           </div>
 
           <div className="flex flex-wrap justify-center gap-4">
-            <Button size="lg" variant="outline" className="gap-2 border-2 border-accent text-accent hover:bg-accent hover:text-accent-foreground">
-              <BarChart3 className="w-4 h-4" />
-              View All Case Studies
-            </Button>
             <Button size="lg" variant="default" className="gap-2 bg-primary text-primary-foreground hover:bg-primary/90">
-              Get Your Custom ROI Report
+              Book Free Strategy Call
               <ArrowRight className="w-4 h-4" />
             </Button>
           </div>
@@ -404,10 +387,10 @@ const Index = () => {
           <div className="text-center mb-16">
             <Badge variant="default" className="mb-4 bg-primary text-primary-foreground">Client Success</Badge>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-              What Our Partners Say
+              What People Say
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Don't just take our word for it. Hear from the leaders who've transformed their businesses with our solutions.
+              Consultants and leaders who changed the way they work.
             </p>
           </div>
 
@@ -442,10 +425,10 @@ const Index = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-              Certified for Strategy, Built on Trust
+              Built on Trust and Experience
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              We maintain the highest standards of security, compliance, and professional excellence.
+              Certified. Experienced. Focused on your success.
             </p>
           </div>
 
@@ -505,33 +488,30 @@ const Index = () => {
           </div>
           
           <h2 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">
-            Ready to Future-Proof Your Business?
+            Ready to change the way you work?
           </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Book a free strategy call to discover how AI can transform your training business. No commitment, just actionable insights.
+            Book a free strategy call. We'll talk about your work and where AI can help.
           </p>
           
           <div className="flex flex-wrap items-center justify-center gap-4 mb-8">
             <Button size="lg" variant="default" className="text-lg px-8 bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg">
-              Book Your Free Strategy Call
-            </Button>
-            <Button size="lg" variant="outline" className="text-lg px-8 border-2 border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground">
-              Download AI Blueprint
+              Book a Free Strategy Call
             </Button>
           </div>
 
           <div className="flex flex-wrap items-center justify-center gap-8 text-sm text-muted-foreground">
             <div className="flex items-center gap-2">
               <CheckCircle2 className="w-4 h-4 text-primary" />
-              <span>30-minute consultation</span>
+              <span>30 minutes</span>
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle2 className="w-4 h-4 text-primary" />
-              <span>Custom ROI analysis</span>
+              <span>No sales pitch</span>
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle2 className="w-4 h-4 text-primary" />
-              <span>Zero obligation</span>
+              <span>Just clarity</span>
             </div>
           </div>
         </div>
@@ -547,16 +527,15 @@ const Index = () => {
                 <div className="text-xl font-bold text-foreground">McCarthy Solutions</div>
               </div>
               <p className="text-muted-foreground text-sm">
-                AI consultancy for professionals. Dublin-based, globally trusted.
+                AI consultant for consultants and SME leaders.
               </p>
             </div>
             <div>
               <h4 className="font-semibold mb-4 text-foreground">Services</h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><a href="#services" className="hover:text-accent transition-colors">AI Call Center</a></li>
                 <li><a href="#services" className="hover:text-accent transition-colors">AI Training</a></li>
-                <li><a href="#services" className="hover:text-accent transition-colors">Automation</a></li>
-                <li><a href="#services" className="hover:text-accent transition-colors">Custom Solutions</a></li>
+                <li><a href="#services" className="hover:text-accent transition-colors">Strategy & Advisory</a></li>
+                <li><a href="#services" className="hover:text-accent transition-colors">Implementation</a></li>
               </ul>
             </div>
             <div>
