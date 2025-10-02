@@ -30,7 +30,7 @@ const Index = () => {
     description: "We listen. We learn what you do and where AI could help."
   }, {
     number: "02",
-    title: "Build Your Strategy",
+    title: "Build your strategy.",
     description: "Clear plan. Practical steps. No tech jargon."
   }, {
     number: "03",
