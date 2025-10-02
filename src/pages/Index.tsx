@@ -64,7 +64,7 @@ const Index = () => {
   }, {
     quote: "Conor brings a refreshing and incredibly insightful approach to understanding the way we do business, and uses that knowledge to suggest creative applications for artificial intelligence to enhance our ways of working. His deep expertise in AI coupled with an enthusiastic ‘can-do’ attitude have been instrumental in accelerating our digital transformation at Global Diversity Practice. From co-developing AI tools and advising on AI strategy, Conor has played a pivotal role in embedding AI-first thinking across our practices. This has helped us to streamline internal processes - freeing up valuable time for our team to prioritise the work that actually matters.",
     author: "Waseem I.",
-    role: "SME Owner",
+    role: "Head of Digital, Global Diversity Practice",
     rating: 5
   }, {
     quote: "McCarthy helped me change the way I deliver my services. My clients notice the difference.",
