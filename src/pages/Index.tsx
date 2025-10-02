@@ -34,7 +34,7 @@ const Index = () => {
     description: "Clear plan. Practical steps. No tech jargon."
   }, {
     number: "03",
-    title: "Implement with Care",
+    title: "Implement with care.",
     description: "Tools that fit your workflow. Training that makes sense."
   }, {
     number: "04",
