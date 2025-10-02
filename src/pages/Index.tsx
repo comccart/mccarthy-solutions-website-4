@@ -52,7 +52,7 @@ const Index = () => {
     industry: "Marketing"
   }, {
     client: "Leadership Coach",
-    metric: "Better",
+    metric: "Faster",
     description: "Client delivery systems",
     industry: "Coaching"
   }];
