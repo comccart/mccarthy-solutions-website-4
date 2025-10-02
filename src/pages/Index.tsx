@@ -171,10 +171,6 @@ const Index = () => {
             <Button size="lg" variant="default" className="gap-2 bg-primary text-primary-foreground hover:bg-primary/90" onClick={() => window.open('https://calendar.app.google/PaVwZ8ZxYX5SVBJT8', '_blank')}>
               Book free intro call
             </Button>
-            <Button size="lg" variant="outline" className="gap-2 border-2 border-accent text-accent hover:bg-accent hover:text-accent-foreground">
-              Learn More
-              <ExternalLink className="w-4 h-4" />
-            </Button>
           </div>
 
           {/* Trust Badge */}
