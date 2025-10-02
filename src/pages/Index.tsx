@@ -104,7 +104,12 @@ const Index = () => {
               <Link to="/blog" className="text-foreground hover:text-accent transition-colors">Blog</Link>
             </div>
 
-            <Button variant="default" size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg">
+            <Button 
+              variant="default" 
+              size="lg" 
+              className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg"
+              onClick={() => window.open('https://calendar.app.google/PaVwZ8ZxYX5SVBJT8', '_blank')}
+            >
               Book free intro call
             </Button>
           </div>
@@ -161,7 +166,12 @@ const Index = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-wrap items-center justify-center gap-4 mb-20">
-            <Button size="lg" variant="default" className="gap-2 bg-primary text-primary-foreground hover:bg-primary/90">
+            <Button 
+              size="lg" 
+              variant="default" 
+              className="gap-2 bg-primary text-primary-foreground hover:bg-primary/90"
+              onClick={() => window.open('https://calendar.app.google/PaVwZ8ZxYX5SVBJT8', '_blank')}
+            >
               Book free intro call
             </Button>
             <Button size="lg" variant="outline" className="gap-2 border-2 border-accent text-accent hover:bg-accent hover:text-accent-foreground">
@@ -376,7 +386,12 @@ const Index = () => {
           </div>
 
           <div className="flex flex-wrap justify-center gap-4">
-            <Button size="lg" variant="default" className="gap-2 bg-primary text-primary-foreground hover:bg-primary/90">
+            <Button 
+              size="lg" 
+              variant="default" 
+              className="gap-2 bg-primary text-primary-foreground hover:bg-primary/90"
+              onClick={() => window.open('https://calendar.app.google/PaVwZ8ZxYX5SVBJT8', '_blank')}
+            >
               Book free intro call
               <ArrowRight className="w-4 h-4" />
             </Button>
@@ -497,7 +512,12 @@ const Index = () => {
           </p>
           
           <div className="flex flex-wrap items-center justify-center gap-4 mb-8">
-            <Button size="lg" variant="default" className="text-lg px-8 bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg">
+            <Button 
+              size="lg" 
+              variant="default" 
+              className="text-lg px-8 bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg"
+              onClick={() => window.open('https://calendar.app.google/PaVwZ8ZxYX5SVBJT8', '_blank')}
+            >
               Book free intro call
             </Button>
           </div>
