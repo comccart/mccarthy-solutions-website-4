@@ -431,7 +431,7 @@ const Index = () => {
       <section id="testimonials" className="py-20 px-6 bg-card">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
-            <Badge variant="secondary" className="mb-4 bg-secondary text-secondary-foreground">Client Success</Badge>
+            <Badge variant="default" className="mb-4 bg-primary text-primary-foreground">Client Success</Badge>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
               What Our Partners Say
             </h2>
