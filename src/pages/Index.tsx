@@ -10,7 +10,7 @@ const Index = () => {
   const logos = ["Seth Godin", "Marie Forleo", "Bernadette Jiwa", "Ramon Ray", "The Unstuck Book", "Leading Consultants", "SME Leaders", "AI Pioneers"];
   const services = [{
     icon: GraduationCap,
-    title: "Learn AI with Confidence",
+    title: "Learn AI with confidence",
     description: "Training and literacy programs that help you and your team understand AI without the overwhelm.",
     benefits: ["Practical Learning", "No Jargon", "Real-World Applications"]
   }, {
