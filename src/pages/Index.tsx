@@ -26,7 +26,7 @@ const Index = () => {
   }];
   const processSteps = [{
     number: "01",
-    title: "Understand Your Work",
+    title: "Understand your work.",
     description: "We listen. We learn what you do and where AI could help."
   }, {
     number: "02",
