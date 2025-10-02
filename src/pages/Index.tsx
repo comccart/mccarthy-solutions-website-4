@@ -57,9 +57,9 @@ const Index = () => {
     industry: "Coaching"
   }];
   const testimonials = [{
-    quote: "This saved me hours each week. I can focus on clients instead of admin.",
-    author: "Sarah M.",
-    role: "Independent Consultant",
+    quote: "Working with Conor helped me cut through the noise and hype surrounding AI and focus on what truly matters. Rather than chasing every new tool, we zeroed in on how AI could drive meaningful outcomes in my day-to-day work—like improving how I lead meetings, make decisions, and build teams. More importantly, our collaboration helped me shape a clearer roadmap for how AI fits into my broader leadership journey. I now use AI in a way that feels intuitive and grounded, and I feel confident in modeling and exploring that mindset with others. If you're a leader looking to make AI not just accessible but transformative, I can’t recommend Conor enough.",
+    author: "Marcus M.",
+    role: "CIO, Safe Life",
     rating: 5
   }, {
     quote: "AI felt overwhelming until I worked with McCarthy. Now it's just part of how I work.",
