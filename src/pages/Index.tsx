@@ -463,7 +463,7 @@ const Index = () => {
           <div className="text-center mb-16">
             <Badge variant="default" className="mb-4 bg-primary text-primary-foreground">FAQ</Badge>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-              Comments, questions, answers.
+              Common questions answered.
             </h2>
             <p className="text-xl text-muted-foreground">
               Everything you need to know about working with McCarthy Solutions.
