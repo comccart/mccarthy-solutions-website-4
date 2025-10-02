@@ -41,12 +41,12 @@ const Index = () => {
     description: "Track real results. Adjust as you grow."
   }];
   const results = [{
-    client: "Strategic Consulting Firm",
+    client: "Global medical business",
     metric: "10+ hours",
-    description: "Saved weekly on admin tasks",
-    industry: "Consulting"
+    description: "Saved weekly on CXO admin tasks",
+    industry: "Healthcare"
   }, {
-    client: "Marketing Consultant",
+    client: "Marketing consultant",
     metric: "3x",
     description: "Content creation scaled",
     industry: "Marketing"
