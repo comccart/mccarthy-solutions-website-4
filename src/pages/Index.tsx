@@ -122,14 +122,6 @@ const Index = () => {
               <span className="text-sm text-secondary font-medium">5.0</span>
             </div>
             <Badge variant="default" className="bg-primary text-primary-foreground">IWAI Certified</Badge>
-            <div className="flex items-center gap-2 text-sm text-muted-foreground">
-              <Shield className="w-4 h-4 text-secondary" />
-              <span>Enterprise Security</span>
-            </div>
-            <div className="flex items-center gap-2 text-sm text-muted-foreground">
-              <Award className="w-4 h-4 text-secondary" />
-              <span>ISO Compliant</span>
-            </div>
           </div>
 
           {/* Hero Text */}
@@ -182,7 +174,11 @@ const Index = () => {
           <div className="relative overflow-hidden py-8">
             <div className="flex gap-12 animate-scroll">
               {[...logos, ...logos].map((logo, i) => <div key={i} className="flex-shrink-0 px-6 py-4 bg-card rounded-lg shadow-sm border border-border min-w-[180px] flex items-center justify-center">
-                  <span className="text-foreground font-medium">{logo}</span>
+                  {i % 2 === 0 ? (
+                    <span className="text-foreground font-medium">{logo}</span>
+                  ) : (
+                    <img src="/placeholder.svg" alt={`${logo} logo`} className="h-8 w-auto object-contain" />
+                  )}
                 </div>)}
             </div>
           </div>
@@ -205,6 +201,11 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-8 items-start">
             {/* Problem Side */}
             <div className="p-8 rounded-2xl bg-muted/50 border border-border space-y-8">
+              <div className="space-y-3">
+                <h3 className="text-2xl font-bold text-foreground mb-1">Your Current State</h3>
+                <p className="text-sm text-muted-foreground mb-4">Manual & Fragmented</p>
+              </div>
+
               <div className="space-y-3">
                 <div className="flex items-center gap-3">
                   <Clock className="w-5 h-5 text-secondary" />
@@ -233,11 +234,8 @@ const Index = () => {
             {/* Solution Side */}
             <div className="p-8 rounded-2xl bg-gradient-to-br from-secondary via-secondary to-secondary/90 text-secondary-foreground space-y-8">
               <div className="space-y-3">
-                <div className="flex items-center gap-3">
-                  <Zap className="w-5 h-5 text-secondary-foreground" />
-                  <h3 className="text-xl font-bold text-secondary-foreground">With AI Done Right</h3>
-                </div>
-                <p className="text-sm text-secondary-foreground/90">Simple & Practical</p>
+                <h3 className="text-2xl font-bold text-secondary-foreground mb-1">With McCarthy Solutions</h3>
+                <p className="text-sm text-secondary-foreground/90">Automated & Intelligent</p>
               </div>
 
               <div className="space-y-3">
@@ -428,27 +426,26 @@ const Index = () => {
               Built on Trust and Experience
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Certified. Experienced. Focused on your success.
+              People I've collaborated with.
             </p>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {[{
-            icon: Shield,
-            label: "Enterprise Security"
-          }, {
-            icon: Award,
-            label: "IWAI Certified"
-          }, {
-            icon: CheckCircle2,
-            label: "ISO Compliant"
-          }, {
-            icon: Target,
-            label: "GDPR Ready"
-          }].map((cert, i) => <div key={i} className="flex flex-col items-center text-center p-6 rounded-lg border-2 border-primary/20 hover:border-primary/50 transition-all">
-                <cert.icon className="w-12 h-12 text-primary mb-4" />
-                <p className="font-semibold text-foreground">{cert.label}</p>
-              </div>)}
+            {[
+              { name: "Collaborator 1" },
+              { name: "Collaborator 2" },
+              { name: "Collaborator 3" },
+              { name: "Collaborator 4" }
+            ].map((person, i) => (
+              <div key={i} className="flex flex-col items-center text-center p-6 rounded-lg border-2 border-primary/20 hover:border-primary/50 transition-all">
+                <img 
+                  src="/placeholder.svg" 
+                  alt={person.name}
+                  className="w-24 h-24 rounded-full object-cover mb-4"
+                />
+                <p className="font-semibold text-foreground">{person.name}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
