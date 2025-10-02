@@ -433,7 +433,7 @@ const Index = () => {
           <div className="text-center mb-16">
             <Badge variant="default" className="mb-4 bg-primary text-primary-foreground">Client Success</Badge>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-              What Our Partners Say
+              What do people say about us?
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Don't just take our word for it. Hear from the leaders who've transformed their businesses with our solutions.
