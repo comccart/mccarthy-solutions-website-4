@@ -62,8 +62,8 @@ const Index = () => {
     role: "CIO, Safe Life",
     rating: 5
   }, {
-    quote: "AI felt overwhelming until I worked with McCarthy. Now it's just part of how I work.",
-    author: "James C.",
+    quote: "Conor brings a refreshing and incredibly insightful approach to understanding the way we do business, and uses that knowledge to suggest creative applications for artificial intelligence to enhance our ways of working. His deep expertise in AI coupled with an enthusiastic ‘can-do’ attitude have been instrumental in accelerating our digital transformation at Global Diversity Practice. From co-developing AI tools and advising on AI strategy, Conor has played a pivotal role in embedding AI-first thinking across our practices. This has helped us to streamline internal processes - freeing up valuable time for our team to prioritise the work that actually matters.",
+    author: "Waseem I.",
     role: "SME Owner",
     rating: 5
   }, {
