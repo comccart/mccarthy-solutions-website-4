@@ -11,7 +11,7 @@ const Index = () => {
   const services = [{
     icon: GraduationCap,
     title: "Learn AI with confidence",
-    description: "Training and literacy programs that help you and your team understand AI without the overwhelm.",
+    description: "Training and literacy programs that help you, your team and your clients understand AI without the overwhelm.",
     benefits: ["Practical Learning", "No Jargon", "Real-World Applications"]
   }, {
     icon: Workflow,
