@@ -88,9 +88,9 @@ const Index = () => {
 
   const testimonials = [
     {
-      quote: "McCarthy Solutions transformed how we deliver training. Their AI solutions allowed us to scale from 100 to 1,000 students without adding staff.",
-      author: "Sarah Mitchell",
-      role: "CEO, Learning Innovations",
+      quote: "Working with Conor helped me cut through the noise and hype surrounding AI and focus on what truly matters. Rather than chasing every new tool, we zeroed in on how AI could drive meaningful outcomes in my day-to-day work—like improving how I lead meetings, make decisions, and build teams. More importantly, our collaboration helped me shape a clearer roadmap for how AI fits into my broader leadership journey. I now use AI in a way that feels intuitive and grounded, and I feel confident in modeling and exploring that mindset with others. If you're a leader looking to make AI not just accessible but transformative, I can’t recommend Conor enough.",
+      author: "Marcus Mellberg",
+      role: "CIO, Safe Life",
       rating: 5
     },
     {
@@ -431,9 +431,9 @@ const Index = () => {
       <section id="testimonials" className="py-20 px-6 bg-card">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
-            <Badge variant="default" className="mb-4 bg-primary text-primary-foreground">Client Success</Badge>
+            <Badge variant="secondary" className="mb-4 bg-secondary text-secondary-foreground">Client Success</Badge>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-              What do people say about us?
+              What Our Partners Say
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Don't just take our word for it. Hear from the leaders who've transformed their businesses with our solutions.
@@ -608,7 +608,7 @@ const Index = () => {
             </div>
           </div>
           <div className="pt-8 border-t border-border text-center text-sm text-muted-foreground">
-            © 2025 McCarthy Solutions. All rights reserved. Built with 💚 in Dublin.
+            © 2025 McCarthy Solutions. All rights reserved. Built with ⚡ in Dublin.
           </div>
         </div>
       </footer>
