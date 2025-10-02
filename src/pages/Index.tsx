@@ -357,7 +357,7 @@ const Index = () => {
               className="bg-primary text-primary-foreground hover:bg-primary/90 gap-2"
               onClick={() => window.open('https://calendar.app.google/PaVwZ8ZxYX5SVBJT8', '_blank')}
             >
-              Start Your Journey
+              Book free intro call
               <ArrowRight className="w-4 h-4" />
             </Button>
           </div>
