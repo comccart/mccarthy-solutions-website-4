@@ -5,8 +5,20 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Download, ExternalLink, Star, CheckCircle2, TrendingUp, Users, Zap, Target, BarChart3, Shield, Award, Clock, ArrowRight, Sparkles, Bot, GraduationCap, Workflow, LineChart } from "lucide-react";
 import iwaiLogo from "@/assets/iwai-logo-new.png";
+import altmbaLogo from "@/assets/altmba-logo.jpg";
+import gdpLogo from "@/assets/gdp-logo.jpg";
+import iipLogo from "@/assets/inclusion-intelligence-logo.png";
+import safelifeLogo from "@/assets/safelife-logo.jpg";
+import techstarsLogo from "@/assets/techstars-logo.svg";
+
 const Index = () => {
-  const logos = ["Seth Godin", "Marie Forleo", "Bernadette Jiwa", "Ramon Ray", "The Unstuck Book", "Leading Consultants", "SME Leaders", "AI Pioneers"];
+  const logos = [
+    { name: "AltMBA", image: altmbaLogo },
+    { name: "Global Diversity Practice", image: gdpLogo },
+    { name: "Inclusion Intelligence", image: iipLogo },
+    { name: "SafeLife", image: safelifeLogo },
+    { name: "Techstars", image: techstarsLogo }
+  ];
   const services = [{
     icon: GraduationCap,
     title: "Learn AI with confidence",
@@ -138,7 +150,7 @@ const Index = () => {
             I help consultants and SME leaders dramatically improve performance, client delivery, and confidence by integrating AI that sticks.
           </p>
           
-          <p className="text-2xl font-semibold text-center text-foreground mb-8">
+          <p className="text-2xl font-semibold text-center text-foreground mb-4">
             Change the way you work.
           </p>
 
@@ -159,7 +171,7 @@ const Index = () => {
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-wrap items-center justify-center gap-4 mb-20">
+          <div className="flex flex-wrap items-center justify-center gap-4 mb-16">
             <Button size="lg" variant="default" className="gap-2 bg-primary text-primary-foreground hover:bg-primary/90" onClick={() => window.open('https://calendar.app.google/PaVwZ8ZxYX5SVBJT8', '_blank')}>
               Book free intro call
             </Button>
@@ -177,7 +189,15 @@ const Index = () => {
           {/* Logo Carousel */}
           <div className="relative overflow-hidden py-8">
             <div className="flex gap-12 animate-scroll">
-              {[...logos, ...logos].map((logo, i) => {})}
+              {[...logos, ...logos].map((logo, i) => (
+                <div key={i} className="flex-shrink-0">
+                  <img 
+                    src={logo.image} 
+                    alt={logo.name}
+                    className="h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100"
+                  />
+                </div>
+              ))}
             </div>
           </div>
         </div>
