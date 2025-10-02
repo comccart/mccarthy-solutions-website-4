@@ -5,22 +5,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Download, ExternalLink, Star, CheckCircle2, TrendingUp, Users, Zap, Target, BarChart3, Shield, Award, Clock, ArrowRight, Sparkles, Bot, GraduationCap, Workflow, LineChart } from "lucide-react";
 import iwaiLogo from "@/assets/iwai-logo-new.png";
-import sethGodin from "@/assets/seth-godin.jpg";
-import bernadette from "@/assets/bernadette-jiwa.jpg";
-import ramonRay from "@/assets/ramon-ray.jpg";
-import altmbaLogo from "@/assets/altmba-logo.jpg";
-import gdpLogo from "@/assets/gdp-logo.jpg";
-import inclusionIntelligenceLogo from "@/assets/inclusion-intelligence-logo.png";
-import safelifeLogo from "@/assets/safelife-logo.jpg";
-import techstarsLogo from "@/assets/techstars-logo.svg";
 const Index = () => {
-  const logos = [
-    { name: "altMBA", image: altmbaLogo },
-    { name: "Global Diversity Practice", image: gdpLogo },
-    { name: "Inclusion Intelligence", image: inclusionIntelligenceLogo },
-    { name: "Safe Life", image: safelifeLogo },
-    { name: "Techstars", image: techstarsLogo }
-  ];
+  const logos = ["Seth Godin", "Marie Forleo", "Bernadette Jiwa", "Ramon Ray", "The Unstuck Book", "Leading Consultants", "SME Leaders", "AI Pioneers"];
   const services = [{
     icon: GraduationCap,
     title: "Learn AI with confidence",
@@ -185,15 +171,13 @@ const Index = () => {
 
           {/* Trust Badge */}
           <p className="text-center text-muted-foreground mb-8">
-            Trusted by consultants and leaders
+            Trusted by Consultants and SME Leaders
           </p>
 
           {/* Logo Carousel */}
           <div className="relative overflow-hidden py-8">
             <div className="flex gap-12 animate-scroll">
-              {[...logos, ...logos].map((logo, i) => <div key={i} className="flex-shrink-0 px-6 py-4 bg-card rounded-lg shadow-sm border border-border min-w-[180px] flex items-center justify-center">
-                  <img src={logo.image} alt={`${logo.name} logo`} className="h-8 w-auto object-contain" />
-                </div>)}
+              {[...logos, ...logos].map((logo, i) => {})}
             </div>
           </div>
         </div>
@@ -216,10 +200,7 @@ const Index = () => {
             {/* Problem Side */}
             <div className="p-8 rounded-2xl bg-muted/50 border border-border space-y-8">
               <div className="space-y-3">
-                <h3 className="text-2xl font-bold text-foreground mb-1 flex items-center gap-2">
-                  <span>🧩</span>
-                  Your Current State
-                </h3>
+                <h3 className="text-2xl font-bold text-foreground mb-1">Your Current State</h3>
                 <p className="text-sm text-muted-foreground mb-4">Manual & Fragmented</p>
               </div>
 
@@ -251,10 +232,7 @@ const Index = () => {
             {/* Solution Side */}
             <div className="p-8 rounded-2xl bg-gradient-to-br from-secondary via-secondary to-secondary/90 text-secondary-foreground space-y-8">
               <div className="space-y-3">
-                <h3 className="text-2xl font-bold text-secondary-foreground mb-1 flex items-center gap-2">
-                  <span>🚀</span>
-                  With McCarthy Solutions
-                </h3>
+                <h3 className="text-2xl font-bold text-secondary-foreground mb-1">With McCarthy Solutions</h3>
                 <p className="text-sm text-secondary-foreground/90">Automated & Intelligent</p>
               </div>
 
@@ -441,25 +419,24 @@ const Index = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-              Built on trust and experience.
+              Built on Trust and Experience
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               People I've collaborated with.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[{
-              name: "Seth Godin",
-              image: sethGodin
-            }, {
-              name: "Bernadette Jiwa",
-              image: bernadette
-            }, {
-              name: "Ramon Ray",
-              image: ramonRay
-            }].map((person, i) => <div key={i} className="flex flex-col items-center text-center p-4 rounded-lg border-2 border-primary/20 hover:border-primary/50 transition-all">
-                <img src={person.image} alt={person.name} className="w-40 h-40 rounded-full object-cover mb-3" />
+            name: "Collaborator 1"
+          }, {
+            name: "Collaborator 2"
+          }, {
+            name: "Collaborator 3"
+          }, {
+            name: "Collaborator 4"
+          }].map((person, i) => <div key={i} className="flex flex-col items-center text-center p-6 rounded-lg border-2 border-primary/20 hover:border-primary/50 transition-all">
+                <img src="/placeholder.svg" alt={person.name} className="w-24 h-24 rounded-full object-cover mb-4" />
                 <p className="font-semibold text-foreground">{person.name}</p>
               </div>)}
           </div>
@@ -472,7 +449,7 @@ const Index = () => {
           <div className="text-center mb-16">
             <Badge variant="default" className="mb-4 bg-primary text-primary-foreground">FAQ</Badge>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-              Common questions answered.
+              Common Questions Answered
             </h2>
             <p className="text-xl text-muted-foreground">
               Everything you need to know about working with McCarthy Solutions.
@@ -570,7 +547,7 @@ const Index = () => {
             </div>
           </div>
           <div className="pt-8 border-t border-border text-center text-sm text-muted-foreground">
-            © 2025 McCarthy Solutions. All rights reserved. Built with 💚 in Dublin.
+            © 2025 McCarthy Solutions. All rights reserved. Built with ⚡ in Dublin.
           </div>
         </div>
       </footer>
