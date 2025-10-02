@@ -171,7 +171,7 @@ const Index = () => {
 
           {/* Trust Badge */}
           <p className="text-center text-muted-foreground mb-8">
-            Trusted by Consultants and SME Leaders
+            Trusted by consultants and leaders
           </p>
 
           {/* Logo Carousel */}
