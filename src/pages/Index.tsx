@@ -5,7 +5,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Download, ExternalLink, Star, CheckCircle2, TrendingUp, Users, Zap, Target, BarChart3, Shield, Award, Clock, ArrowRight, Sparkles, Bot, GraduationCap, Workflow, LineChart } from "lucide-react";
 import iwaiLogo from "@/assets/iwai-logo-new.png";
-
 const Index = () => {
   const logos = ["Seth Godin", "Marie Forleo", "Bernadette Jiwa", "Ramon Ray", "The Unstuck Book", "Leading Consultants", "SME Leaders", "AI Pioneers"];
   const services = [{
@@ -104,12 +103,7 @@ const Index = () => {
               <Link to="/blog" className="text-foreground hover:text-accent transition-colors">Blog</Link>
             </div>
 
-            <Button 
-              variant="default" 
-              size="lg" 
-              className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg"
-              onClick={() => window.open('https://calendar.app.google/PaVwZ8ZxYX5SVBJT8', '_blank')}
-            >
+            <Button variant="default" size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg" onClick={() => window.open('https://calendar.app.google/PaVwZ8ZxYX5SVBJT8', '_blank')}>
               Book free intro call
             </Button>
           </div>
@@ -166,12 +160,7 @@ const Index = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-wrap items-center justify-center gap-4 mb-20">
-            <Button 
-              size="lg" 
-              variant="default" 
-              className="gap-2 bg-primary text-primary-foreground hover:bg-primary/90"
-              onClick={() => window.open('https://calendar.app.google/PaVwZ8ZxYX5SVBJT8', '_blank')}
-            >
+            <Button size="lg" variant="default" className="gap-2 bg-primary text-primary-foreground hover:bg-primary/90" onClick={() => window.open('https://calendar.app.google/PaVwZ8ZxYX5SVBJT8', '_blank')}>
               Book free intro call
             </Button>
             <Button size="lg" variant="outline" className="gap-2 border-2 border-accent text-accent hover:bg-accent hover:text-accent-foreground">
@@ -189,11 +178,7 @@ const Index = () => {
           <div className="relative overflow-hidden py-8">
             <div className="flex gap-12 animate-scroll">
               {[...logos, ...logos].map((logo, i) => <div key={i} className="flex-shrink-0 px-6 py-4 bg-card rounded-lg shadow-sm border border-border min-w-[180px] flex items-center justify-center">
-                  {i % 2 === 0 ? (
-                    <span className="text-foreground font-medium">{logo}</span>
-                  ) : (
-                    <img src="/placeholder.svg" alt={`${logo} logo`} className="h-8 w-auto object-contain" />
-                  )}
+                  {i % 2 === 0 ? <span className="text-foreground font-medium">{logo}</span> : <img src="/placeholder.svg" alt={`${logo} logo`} className="h-8 w-auto object-contain" />}
                 </div>)}
             </div>
           </div>
@@ -286,9 +271,7 @@ const Index = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
             <Badge variant="default" className="mb-4 bg-primary text-primary-foreground">Our Services</Badge>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-              What can I do for you?
-            </h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">What can we do for you?</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Three ways to make AI work for you.
             </p>
@@ -351,12 +334,7 @@ const Index = () => {
           </div>
 
           <div className="text-center mt-12">
-            <Button 
-              size="lg" 
-              variant="default" 
-              className="bg-primary text-primary-foreground hover:bg-primary/90 gap-2"
-              onClick={() => window.open('https://calendar.app.google/PaVwZ8ZxYX5SVBJT8', '_blank')}
-            >
+            <Button size="lg" variant="default" className="bg-primary text-primary-foreground hover:bg-primary/90 gap-2" onClick={() => window.open('https://calendar.app.google/PaVwZ8ZxYX5SVBJT8', '_blank')}>
               Book free intro call
               <ArrowRight className="w-4 h-4" />
             </Button>
@@ -391,12 +369,7 @@ const Index = () => {
           </div>
 
           <div className="flex flex-wrap justify-center gap-4">
-            <Button 
-              size="lg" 
-              variant="default" 
-              className="gap-2 bg-primary text-primary-foreground hover:bg-primary/90"
-              onClick={() => window.open('https://calendar.app.google/PaVwZ8ZxYX5SVBJT8', '_blank')}
-            >
+            <Button size="lg" variant="default" className="gap-2 bg-primary text-primary-foreground hover:bg-primary/90" onClick={() => window.open('https://calendar.app.google/PaVwZ8ZxYX5SVBJT8', '_blank')}>
               Book free intro call
               <ArrowRight className="w-4 h-4" />
             </Button>
@@ -456,21 +429,18 @@ const Index = () => {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {[
-              { name: "Collaborator 1" },
-              { name: "Collaborator 2" },
-              { name: "Collaborator 3" },
-              { name: "Collaborator 4" }
-            ].map((person, i) => (
-              <div key={i} className="flex flex-col items-center text-center p-6 rounded-lg border-2 border-primary/20 hover:border-primary/50 transition-all">
-                <img 
-                  src="/placeholder.svg" 
-                  alt={person.name}
-                  className="w-24 h-24 rounded-full object-cover mb-4"
-                />
+            {[{
+            name: "Collaborator 1"
+          }, {
+            name: "Collaborator 2"
+          }, {
+            name: "Collaborator 3"
+          }, {
+            name: "Collaborator 4"
+          }].map((person, i) => <div key={i} className="flex flex-col items-center text-center p-6 rounded-lg border-2 border-primary/20 hover:border-primary/50 transition-all">
+                <img src="/placeholder.svg" alt={person.name} className="w-24 h-24 rounded-full object-cover mb-4" />
                 <p className="font-semibold text-foreground">{person.name}</p>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </section>
@@ -517,12 +487,7 @@ const Index = () => {
           </p>
           
           <div className="flex flex-wrap items-center justify-center gap-4 mb-8">
-            <Button 
-              size="lg" 
-              variant="default" 
-              className="text-lg px-8 bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg"
-              onClick={() => window.open('https://calendar.app.google/PaVwZ8ZxYX5SVBJT8', '_blank')}
-            >
+            <Button size="lg" variant="default" className="text-lg px-8 bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg" onClick={() => window.open('https://calendar.app.google/PaVwZ8ZxYX5SVBJT8', '_blank')}>
               Book free intro call
             </Button>
           </div>
