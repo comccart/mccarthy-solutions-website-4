@@ -205,7 +205,10 @@ const Index = () => {
             {/* Problem Side */}
             <div className="p-8 rounded-2xl bg-muted/50 border border-border space-y-8">
               <div className="space-y-3">
-                <h3 className="text-2xl font-bold text-foreground mb-1">Your Current State</h3>
+                <h3 className="text-2xl font-bold text-foreground mb-1 flex items-center gap-2">
+                  <span>🧩</span>
+                  Your Current State
+                </h3>
                 <p className="text-sm text-muted-foreground mb-4">Manual & Fragmented</p>
               </div>
 
@@ -237,7 +240,10 @@ const Index = () => {
             {/* Solution Side */}
             <div className="p-8 rounded-2xl bg-gradient-to-br from-secondary via-secondary to-secondary/90 text-secondary-foreground space-y-8">
               <div className="space-y-3">
-                <h3 className="text-2xl font-bold text-secondary-foreground mb-1">With McCarthy Solutions</h3>
+                <h3 className="text-2xl font-bold text-secondary-foreground mb-1 flex items-center gap-2">
+                  <span>🚀</span>
+                  With McCarthy Solutions
+                </h3>
                 <p className="text-sm text-secondary-foreground/90">Automated & Intelligent</p>
               </div>
 
