@@ -205,7 +205,7 @@ const Index = () => {
         <div className="container mx-auto max-w-6xl text-center mb-16">
           <Badge variant="default" className="mb-6 bg-primary text-primary-foreground">The Challenge</Badge>
           <h2 className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
-            You Know Your Work. AI Can Help You Do It Better.
+            You know your work. AI can help you do it better.
           </h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
             Most consultants and leaders waste time on tasks AI could handle. But AI feels complicated.
