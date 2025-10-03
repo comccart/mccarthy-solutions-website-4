@@ -141,8 +141,9 @@ const Index = () => {
           </div>
 
           {/* Hero Text */}
-          <h1 className="text-5xl md:text-7xl font-bold text-center mb-8 leading-tight text-foreground">
-            Less admin. More impact.<br />
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-center mb-8 leading-tight text-foreground">
+            <span className="inline-block">Less admin. More impact.</span>
+            <br />
             <span className="text-primary">Powered by AI.</span>
           </h1>
 
