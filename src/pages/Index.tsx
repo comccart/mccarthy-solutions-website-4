@@ -440,13 +440,26 @@ const Index = () => {
 
           <div className="grid grid-cols-2 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {[
-              { name: "Seth Godin", image: sethGodinImage },
-              { name: "Ramon Ray", image: ramonRayImage },
-              { name: "Bernadette Jiwa", image: bernadetteJiwaImage }
+              { 
+                name: "Seth Godin", 
+                image: sethGodinImage,
+                description: "Changed how millions think about marketing, trust, and creative work by making ideas spread through clarity and generosity."
+              },
+              { 
+                name: "Ramon Ray", 
+                image: ramonRayImage,
+                description: "Inspires and equips entrepreneurs with practical business growth advice rooted in energy, storytelling, and community."
+              },
+              { 
+                name: "Bernadette Jiwa", 
+                image: bernadetteJiwaImage,
+                description: "Helps brands find and tell meaningful stories that connect deeply with the people they serve."
+              }
             ].map((person, i) => (
               <div key={i} className="flex flex-col items-center text-center p-4 rounded-lg border-2 border-primary/20 hover:border-primary/50 transition-all">
                 <img src={person.image} alt={person.name} className="w-40 h-40 rounded-full object-cover mb-4" />
-                <p className="font-semibold text-foreground">{person.name}</p>
+                <p className="font-semibold text-foreground mb-2">{person.name}</p>
+                <p className="text-sm text-muted-foreground">{person.description}</p>
               </div>
             ))}
           </div>
