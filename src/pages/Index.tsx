@@ -3,7 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Download, ExternalLink, Star, CheckCircle2, TrendingUp, Users, Zap, Target, BarChart3, Shield, Award, Clock, ArrowRight, Sparkles, Bot, GraduationCap, Workflow, LineChart, Puzzle, Rocket } from "lucide-react";
+import { Download, ExternalLink, Star, CheckCircle2, TrendingUp, Users, Target, BarChart3, Shield, Award, Clock, ArrowRight, Sparkles, Bot, GraduationCap, Workflow, LineChart, Puzzle, Rocket } from "lucide-react";
+import chevronLogo from "@/assets/chevron-logo.png";
 import iwaiLogo from "@/assets/iwai-logo-new.png";
 import altmbaLogo from "@/assets/altmba-logo.jpg";
 import gdpLogo from "@/assets/gdp-logo.jpg";
@@ -110,7 +111,7 @@ const Index = () => {
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
-              <Zap className="w-6 h-6 text-primary" />
+              <img src={chevronLogo} alt="McCarthy Solutions" className="w-6 h-6" />
               <div className="text-2xl font-bold text-foreground">McCarthy Solutions</div>
             </div>
             
@@ -547,7 +548,7 @@ const Index = () => {
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <Zap className="w-6 h-6 text-primary" />
+                <img src={chevronLogo} alt="McCarthy Solutions" className="w-6 h-6" />
                 <div className="text-xl font-bold text-foreground">McCarthy Solutions</div>
               </div>
               <p className="text-muted-foreground text-sm">
