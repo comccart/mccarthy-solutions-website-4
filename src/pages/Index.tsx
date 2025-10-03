@@ -434,7 +434,7 @@ const Index = () => {
               Who I've collaborated with.
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              People I've collaborated with.
+              Work shaped in conversation with remarkable people.
             </p>
           </div>
 
