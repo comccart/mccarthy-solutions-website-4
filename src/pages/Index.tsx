@@ -142,7 +142,7 @@ const Index = () => {
 
           {/* Hero Text */}
           <h1 className="text-5xl md:text-7xl font-bold text-center mb-8 leading-tight text-foreground">
-            Less admin. More impact.{" "}
+            Less admin. More impact.<br />
             <span className="text-primary">Powered by AI.</span>
           </h1>
 
