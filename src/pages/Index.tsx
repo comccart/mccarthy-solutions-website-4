@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Download, ExternalLink, Star, CheckCircle2, TrendingUp, Users, Zap, Target, BarChart3, Shield, Award, Clock, ArrowRight, Sparkles, Bot, GraduationCap, Workflow, LineChart } from "lucide-react";
+import { Download, ExternalLink, Star, CheckCircle2, TrendingUp, Users, Zap, Target, BarChart3, Shield, Award, Clock, ArrowRight, Sparkles, Bot, GraduationCap, Workflow, LineChart, Puzzle, Rocket } from "lucide-react";
 import iwaiLogo from "@/assets/iwai-logo-new.png";
 import altmbaLogo from "@/assets/altmba-logo.jpg";
 import gdpLogo from "@/assets/gdp-logo.jpg";
@@ -213,7 +213,10 @@ const Index = () => {
             <div className="p-8 rounded-2xl bg-muted/50 border border-border space-y-8">
               <div className="space-y-3">
                 <h3 className="text-2xl font-bold text-foreground mb-1">Your Current State</h3>
-                <p className="text-sm text-muted-foreground mb-4">Manual & Fragmented</p>
+                <div className="flex items-center gap-2">
+                  <Puzzle className="w-4 h-4 text-muted-foreground" />
+                  <p className="text-sm text-muted-foreground mb-0">Manual & Fragmented</p>
+                </div>
               </div>
 
               <div className="space-y-3">
@@ -245,7 +248,10 @@ const Index = () => {
             <div className="p-8 rounded-2xl bg-gradient-to-br from-secondary via-secondary to-secondary/90 text-secondary-foreground space-y-8">
               <div className="space-y-3">
                 <h3 className="text-2xl font-bold text-secondary-foreground mb-1">With McCarthy Solutions</h3>
-                <p className="text-sm text-secondary-foreground/90">Automated & Intelligent</p>
+                <div className="flex items-center gap-2">
+                  <Rocket className="w-4 h-4 text-secondary-foreground" />
+                  <p className="text-sm text-secondary-foreground/90 mb-0">Automated & Intelligent</p>
+                </div>
               </div>
 
               <div className="space-y-3">
