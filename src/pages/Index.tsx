@@ -11,6 +11,7 @@ import iipLogo from "@/assets/inclusion-intelligence-logo.png";
 import safelifeLogo from "@/assets/safelife-logo.jpg";
 import techstarsLogo from "@/assets/techstars-logo.svg";
 import ineffableLogo from "@/assets/ineffable-logo.jpg";
+import akimboLogo from "@/assets/akimbo-logo.svg";
 import sethGodinImage from "@/assets/seth-godin.jpg";
 import ramonRayImage from "@/assets/ramon-ray.jpg";
 import bernadetteJiwaImage from "@/assets/bernadette-jiwa.jpg";
@@ -22,7 +23,8 @@ const Index = () => {
     { name: "Inclusion Intelligence", image: iipLogo },
     { name: "SafeLife", image: safelifeLogo },
     { name: "Techstars", image: techstarsLogo },
-    { name: "Ineffable Music", image: ineffableLogo }
+    { name: "Ineffable Music", image: ineffableLogo },
+    { name: "Akimbo", image: akimboLogo }
   ];
   const services = [{
     icon: GraduationCap,
