@@ -111,7 +111,7 @@ const Index = () => {
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
-              <img src={chevronLogo} alt="McCarthy Solutions" className="w-6 h-6" />
+              <img src={chevronLogo} alt="McCarthy Solutions" className="w-8 h-8" />
               <div className="text-2xl font-bold text-foreground">McCarthy Solutions</div>
             </div>
             
@@ -548,7 +548,7 @@ const Index = () => {
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <img src={chevronLogo} alt="McCarthy Solutions" className="w-6 h-6" />
+                <img src={chevronLogo} alt="McCarthy Solutions" className="w-7 h-7" />
                 <div className="text-xl font-bold text-foreground">McCarthy Solutions</div>
               </div>
               <p className="text-muted-foreground text-sm">
