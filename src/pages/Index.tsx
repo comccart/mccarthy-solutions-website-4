@@ -425,7 +425,7 @@ const Index = () => {
       <section className="px-6" style={{ paddingTop: '100px', paddingBottom: '100px', backgroundColor: '#407899' }}>
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-8" style={{ color: '#F5F1ED' }}>
-            What We Believe About AI
+            What we believe about AI.
           </h2>
           <div className="space-y-6 text-xl" style={{ color: '#F5F1ED' }}>
             <p>AI is not a replacement for human judgment—it's a tool that amplifies your expertise and frees you to focus on what truly matters.</p>
