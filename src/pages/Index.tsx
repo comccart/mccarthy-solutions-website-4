@@ -428,9 +428,18 @@ const Index = () => {
             What we believe about AI.
           </h2>
           <div className="space-y-6 text-xl" style={{ color: '#F5F1ED' }}>
-            <p>AI is not a replacement for human judgment—it's a tool that amplifies your expertise and frees you to focus on what truly matters.</p>
-            <p>The best AI implementations are simple, practical, and built around the way you already work.</p>
-            <p>Real transformation happens when technology serves people, not the other way around.</p>
+            <div className="flex items-start gap-4 text-left max-w-3xl mx-auto">
+              <Bot className="w-8 h-8 flex-shrink-0 mt-1" style={{ color: '#FBA60C' }} />
+              <p>AI is not a replacement for human judgment. It's a tool that amplifies your expertise and frees you to focus on what truly matters.</p>
+            </div>
+            <div className="flex items-start gap-4 text-left max-w-3xl mx-auto">
+              <Workflow className="w-8 h-8 flex-shrink-0 mt-1" style={{ color: '#FBA60C' }} />
+              <p>The best AI implementations are simple, practical, and built around the way you already work.</p>
+            </div>
+            <div className="flex items-start gap-4 text-left max-w-3xl mx-auto">
+              <Users className="w-8 h-8 flex-shrink-0 mt-1" style={{ color: '#FBA60C' }} />
+              <p>Real transformation happens when technology serves people, not the other way around.</p>
+            </div>
           </div>
         </div>
       </section>
