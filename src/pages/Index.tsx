@@ -130,56 +130,40 @@ const Index = () => {
       </nav>
 
       {/* Enhanced Hero Section */}
-      <section className="pt-32 pb-20 px-6">
+      <section className="pt-32 pb-24 px-6" style={{ paddingTop: '128px', paddingBottom: '100px' }}>
         <div className="container mx-auto max-w-6xl">
           {/* Trust Badges */}
-          <div className="flex flex-wrap items-center justify-center gap-6 mb-12">
-            <div className="flex flex-col items-center gap-3">
+          <div className="flex flex-wrap items-start gap-6 mb-12">
+            <div className="flex flex-col items-start gap-3">
               <img src={iwaiLogo} alt="Innovating with AI" className="h-12" />
               <span className="text-base font-semibold text-muted-foreground">IWAI Certified</span>
             </div>
           </div>
 
-          {/* Hero Text */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-center mb-8 leading-tight text-foreground">
+          {/* Hero Text - Left Aligned */}
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-left mb-8 leading-tight text-foreground">
             <span className="inline-block">Less admin. More impact.</span>
             <br />
             <span className="text-primary">Powered by AI.</span>
           </h1>
 
-          <p className="text-xl text-muted-foreground text-center max-w-3xl mx-auto mb-4">
+          <p className="text-xl text-muted-foreground text-left max-w-3xl mb-4">
             I help consultants and SME leaders dramatically improve performance, client delivery, and confidence by integrating AI that sticks.
           </p>
           
-          <p className="text-2xl font-semibold text-center text-foreground mb-4">
+          <p className="text-2xl font-semibold text-left text-foreground mb-4">
             Change the way you work.
           </p>
 
-          {/* Key Proof Points */}
-          <div className="flex flex-wrap items-center justify-center gap-8 mb-12">
-            <div className="text-center">
-              
-              
-            </div>
-            <div className="text-center">
-              
-              
-            </div>
-            <div className="text-center">
-              
-              
-            </div>
-          </div>
-
           {/* CTA Buttons */}
-          <div className="flex flex-wrap items-center justify-center gap-4 mb-16">
+          <div className="flex flex-wrap items-start gap-4 mb-16">
             <Button size="lg" variant="default" className="gap-2 bg-primary text-primary-foreground hover:bg-primary/90" onClick={() => window.open('https://calendar.app.google/PaVwZ8ZxYX5SVBJT8', '_blank')}>
               Book free intro call
             </Button>
           </div>
 
           {/* Trust Badge */}
-          <p className="text-center text-muted-foreground mb-8">
+          <p className="text-left text-muted-foreground mb-8">
             Trusted by Consultants and SME Leaders
           </p>
 
@@ -201,7 +185,7 @@ const Index = () => {
       </section>
 
       {/* Problem/Solution Section */}
-      <section className="py-20 px-6 bg-card">
+      <section className="px-6 bg-background" style={{ paddingTop: '100px', paddingBottom: '100px' }}>
         <div className="container mx-auto max-w-6xl text-center mb-16">
           <Badge variant="default" className="mb-6 bg-primary text-primary-foreground">The Challenge</Badge>
           <h2 className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
@@ -288,7 +272,7 @@ const Index = () => {
       </section>
 
       {/* Detailed Services Section */}
-      <section id="services" className="py-20 px-6">
+      <section id="services" className="px-6" style={{ paddingTop: '100px', paddingBottom: '100px', backgroundColor: '#F5F1ED' }}>
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
             <Badge variant="default" className="mb-4 bg-primary text-primary-foreground">Our Services</Badge>
@@ -324,82 +308,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Process/Methodology Section */}
-      <section id="process" className="py-20 px-6 bg-card">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-16">
-            <Badge variant="default" className="mb-4 bg-primary text-primary-foreground">Our Process</Badge>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-              How will we work together?
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Simple steps. Real results.
-            </p>
-          </div>
-
-          <div className="relative">
-            {/* Connection Line */}
-            <div className="hidden md:block absolute top-16 left-[10%] right-[10%] h-0.5 bg-gradient-to-r from-primary via-secondary to-primary opacity-30" />
-            
-            <div className="grid md:grid-cols-4 gap-8">
-              {processSteps.map((step, i) => <div key={i} className="relative">
-                  <div className="flex flex-col items-center text-center">
-                    <div className="w-16 h-16 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-2xl font-bold mb-4 relative z-10 shadow-lg">
-                      {step.number}
-                    </div>
-                    <h3 className="text-xl font-bold mb-3 text-foreground">{step.title}</h3>
-                    <p className="text-sm text-muted-foreground">{step.description}</p>
-                  </div>
-                </div>)}
-            </div>
-          </div>
-
-          <div className="text-center mt-12">
-            <Button size="lg" variant="default" className="bg-primary text-primary-foreground hover:bg-primary/90 gap-2" onClick={() => window.open('https://calendar.app.google/PaVwZ8ZxYX5SVBJT8', '_blank')}>
-              Book free intro call
-              <ArrowRight className="w-4 h-4" />
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* Results & Case Studies */}
-      <section id="results" className="py-20 px-6">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-16">
-            <Badge variant="default" className="mb-4 bg-primary text-primary-foreground">Proven Results</Badge>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-              Real results from real people.
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Here's what happens when consultants and leaders work with AI the right way.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
-            {results.map((result, i) => <Card key={i} className="text-center border-2 hover:border-primary/50 transition-all">
-                <CardHeader>
-                  <div className="text-5xl font-bold text-primary mb-2">{result.metric}</div>
-                  <CardTitle className="text-lg text-foreground">{result.description}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground mb-2">{result.client}</p>
-                  <Badge variant="default" className="text-xs bg-primary text-primary-foreground">{result.industry}</Badge>
-                </CardContent>
-              </Card>)}
-          </div>
-
-          <div className="flex flex-wrap justify-center gap-4">
-            <Button size="lg" variant="default" className="gap-2 bg-primary text-primary-foreground hover:bg-primary/90" onClick={() => window.open('https://calendar.app.google/PaVwZ8ZxYX5SVBJT8', '_blank')}>
-              Book free intro call
-              <ArrowRight className="w-4 h-4" />
-            </Button>
-          </div>
-        </div>
-      </section>
-
       {/* Social Proof & Testimonials */}
-      <section id="testimonials" className="py-20 px-6 bg-card">
+      <section id="testimonials" className="px-6 bg-background" style={{ paddingTop: '100px', paddingBottom: '100px' }}>
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
             <Badge variant="default" className="mb-4 bg-primary text-primary-foreground">Client Success</Badge>
@@ -437,8 +347,97 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Process/Methodology Section */}
+      <section id="process" className="px-6" style={{ paddingTop: '100px', paddingBottom: '100px', backgroundColor: '#F5F1ED' }}>
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-16">
+            <Badge variant="default" className="mb-4 bg-primary text-primary-foreground">Our Process</Badge>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
+              How will we work together?
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Simple steps. Real results.
+            </p>
+          </div>
+
+          <div className="relative">
+            {/* Connection Line */}
+            <div className="hidden md:block absolute top-16 left-[15%] right-[15%] h-0.5 bg-gradient-to-r from-primary via-secondary to-primary opacity-30" />
+            
+            <div className="grid md:grid-cols-3 gap-12">
+              {processSteps.slice(0, 3).map((step, i) => <div key={i} className="relative">
+                  <div className="flex flex-col items-center text-center">
+                    <div className="w-16 h-16 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-2xl font-bold mb-4 relative z-10 shadow-lg">
+                      {step.number}
+                    </div>
+                    <h3 className="text-xl font-bold mb-3 text-foreground">{step.title}</h3>
+                    <p className="text-sm text-muted-foreground">{step.description}</p>
+                  </div>
+                </div>)}
+            </div>
+          </div>
+
+          <div className="text-center mt-12">
+            <Button size="lg" variant="default" className="bg-primary text-primary-foreground hover:bg-primary/90 gap-2" onClick={() => window.open('https://calendar.app.google/PaVwZ8ZxYX5SVBJT8', '_blank')}>
+              Book free intro call
+              <ArrowRight className="w-4 h-4" />
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Results & Case Studies */}
+      <section id="results" className="px-6 bg-background" style={{ paddingTop: '100px', paddingBottom: '100px' }}>
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-16">
+            <Badge variant="default" className="mb-4 bg-primary text-primary-foreground">Proven Results</Badge>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
+              Real results from real people.
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Here's what happens when consultants and leaders work with AI the right way.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            {results.map((result, i) => <Card key={i} className="text-center border-2 hover:border-primary/50 transition-all">
+                <CardHeader>
+                  <div className="text-5xl font-bold text-primary mb-2">{result.metric}</div>
+                  <CardTitle className="text-lg text-foreground">{result.description}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-muted-foreground mb-2">{result.client}</p>
+                  <Badge variant="default" className="text-xs bg-primary text-primary-foreground">{result.industry}</Badge>
+                </CardContent>
+              </Card>)}
+          </div>
+
+          <div className="flex flex-wrap justify-center gap-4">
+            <Button size="lg" variant="default" className="gap-2 bg-primary text-primary-foreground hover:bg-primary/90" onClick={() => window.open('https://calendar.app.google/PaVwZ8ZxYX5SVBJT8', '_blank')}>
+              Book free intro call
+              <ArrowRight className="w-4 h-4" />
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* What We Believe About AI */}
+      <section className="px-6" style={{ paddingTop: '100px', paddingBottom: '100px', backgroundColor: '#407899' }}>
+        <div className="container mx-auto max-w-4xl text-center">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8" style={{ color: '#F5F1ED' }}>
+            What We Believe About AI
+          </h2>
+          <div className="space-y-6 text-xl" style={{ color: '#F5F1ED' }}>
+            <p>AI is not a replacement for human judgment—it's a tool that amplifies your expertise and frees you to focus on what truly matters.</p>
+            <p>The best AI implementations are simple, practical, and built around the way you already work.</p>
+            <p>Real transformation happens when technology serves people, not the other way around.</p>
+          </div>
+        </div>
+      </section>
+
+
       {/* Trust & Certification */}
-      <section className="py-20 px-6">
+      <section className="px-6 bg-background" style={{ paddingTop: '100px', paddingBottom: '100px' }}>
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
@@ -478,7 +477,7 @@ const Index = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 px-6 bg-card">
+      <section className="px-6" style={{ paddingTop: '100px', paddingBottom: '100px', backgroundColor: '#F5F1ED' }}>
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-16">
             <Badge variant="default" className="mb-4 bg-primary text-primary-foreground">FAQ</Badge>
@@ -504,37 +503,37 @@ const Index = () => {
       </section>
 
       {/* Final CTA Section */}
-      <section id="contact" className="py-20 px-6 bg-gradient-to-br from-primary/10 via-background to-secondary/10">
+      <section id="contact" className="px-6" style={{ paddingTop: '100px', paddingBottom: '100px', backgroundColor: '#2E294E' }}>
         <div className="container mx-auto max-w-4xl text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-8">
-            <Clock className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium text-foreground">Limited Spots Available This Quarter</span>
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border mb-8" style={{ backgroundColor: 'rgba(251, 166, 12, 0.1)', borderColor: 'rgba(251, 166, 12, 0.3)' }}>
+            <Clock className="w-4 h-4" style={{ color: '#FBA60C' }} />
+            <span className="text-sm font-medium" style={{ color: '#F5F1ED' }}>Limited Spots Available This Quarter</span>
           </div>
           
-          <h2 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">
+          <h2 className="text-4xl md:text-6xl font-bold mb-6" style={{ color: '#F5F1ED' }}>
             Ready to change the way you work?
           </h2>
-          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+          <p className="text-xl mb-8 max-w-2xl mx-auto" style={{ color: '#F5F1ED', opacity: 0.9 }}>
             Book a free strategy call. We'll talk about your work and where AI can help.
           </p>
           
           <div className="flex flex-wrap items-center justify-center gap-4 mb-8">
-            <Button size="lg" variant="default" className="text-lg px-8 bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg" onClick={() => window.open('https://calendar.app.google/PaVwZ8ZxYX5SVBJT8', '_blank')}>
+            <Button size="lg" className="text-lg px-8 shadow-lg" style={{ backgroundColor: '#FBA60C', color: '#2E294E' }} onClick={() => window.open('https://calendar.app.google/PaVwZ8ZxYX5SVBJT8', '_blank')}>
               Book free intro call
             </Button>
           </div>
 
-          <div className="flex flex-wrap items-center justify-center gap-8 text-sm text-muted-foreground">
+          <div className="flex flex-wrap items-center justify-center gap-8 text-sm" style={{ color: '#F5F1ED', opacity: 0.8 }}>
             <div className="flex items-center gap-2">
-              <CheckCircle2 className="w-4 h-4 text-primary" />
+              <CheckCircle2 className="w-4 h-4" style={{ color: '#FBA60C' }} />
               <span>30 minutes</span>
             </div>
             <div className="flex items-center gap-2">
-              <CheckCircle2 className="w-4 h-4 text-primary" />
+              <CheckCircle2 className="w-4 h-4" style={{ color: '#FBA60C' }} />
               <span>No sales pitch</span>
             </div>
             <div className="flex items-center gap-2">
-              <CheckCircle2 className="w-4 h-4 text-primary" />
+              <CheckCircle2 className="w-4 h-4" style={{ color: '#FBA60C' }} />
               <span>Just clarity</span>
             </div>
           </div>
@@ -542,7 +541,7 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="py-12 px-6 border-t border-border bg-card">
+      <footer className="py-12 px-6 border-t border-border" style={{ backgroundColor: '#F5F1ED' }}>
         <div className="container mx-auto max-w-6xl">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
