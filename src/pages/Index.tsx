@@ -16,6 +16,9 @@ import akimboLogo from "@/assets/akimbo-logo.svg";
 import sethGodinImage from "@/assets/seth-godin.jpg";
 import ramonRayImage from "@/assets/ramon-ray.jpg";
 import bernadetteJiwaImage from "@/assets/bernadette-jiwa.jpg";
+import marcusImage from "@/assets/marcus.jpeg";
+import waseemImage from "@/assets/waseem.jpg";
+import chrisImage from "@/assets/chris.jpeg";
 
 const Index = () => {
   const logos = [
@@ -80,17 +83,20 @@ const Index = () => {
     quote: "Working with Conor helped me cut through the noise and hype surrounding AI and focus on what truly matters. Rather than chasing every new tool, we zeroed in on how AI could drive meaningful outcomes in my day-to-day work—like improving how I lead meetings, make decisions, and build teams. More importantly, our collaboration helped me shape a clearer roadmap for how AI fits into my broader leadership journey. I now use AI in a way that feels intuitive and grounded, and I feel confident in modeling and exploring that mindset with others. If you're a leader looking to make AI not just accessible but transformative, I can’t recommend Conor enough.",
     author: "Marcus M.",
     role: "CIO, Safe Life",
-    rating: 5
+    rating: 5,
+    image: marcusImage
   }, {
     quote: "Conor brings a refreshing and incredibly insightful approach to understanding the way we do business, and uses that knowledge to suggest creative applications for artificial intelligence to enhance our ways of working. His deep expertise in AI coupled with an enthusiastic ‘can-do’ attitude have been instrumental in accelerating our digital transformation at Global Diversity Practice. From co-developing AI tools and advising on AI strategy, Conor has played a pivotal role in embedding AI-first thinking across our practices. This has helped us to streamline internal processes - freeing up valuable time for our team to prioritise the work that actually matters.",
     author: "Waseem I.",
     role: "Head of Digital, Global Diversity Practice",
-    rating: 5
+    rating: 5,
+    image: waseemImage
   }, {
     quote: "Conor is nothing short of a genius when it comes to AI. His unique ability to demystify complex concepts and explain them in a way that’s both engaging and easy to understand sets him apart from the crowd. His work helping us create our AI course was exceptional plus he's a joy to work with. His rare combination of academic depth and practical expertise makes him the go-to person for any AI-driven project. If you are looking for an invaluable partner to help you leverage AI for your business success, then Conor is your man.",
     author: "Chris R.",
     role: "CEO, 42Courses",
-    rating: 5
+    rating: 5,
+    image: chrisImage
   }];
   const faqs = [{
     question: "I'm not technical. Can I still use AI?",
@@ -333,9 +339,11 @@ const Index = () => {
                 </CardHeader>
                 <CardContent>
                   <div className="flex items-center gap-3">
-                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                      <Users className="w-6 h-6 text-primary" />
-                    </div>
+                    <img 
+                      src={testimonial.image} 
+                      alt={testimonial.author}
+                      className="w-12 h-12 rounded-full object-cover"
+                    />
                     <div>
                       <p className="font-semibold text-foreground">{testimonial.author}</p>
                       <p className="text-sm text-secondary">{testimonial.role}</p>
