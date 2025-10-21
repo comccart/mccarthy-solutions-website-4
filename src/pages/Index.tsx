@@ -19,6 +19,9 @@ import bernadetteJiwaImage from "@/assets/bernadette-jiwa.jpg";
 import marcusImage from "@/assets/marcus.jpeg";
 import waseemImage from "@/assets/waseem.jpg";
 import chrisImage from "@/assets/chris.jpeg";
+import aimLogo from "@/assets/aim-logo.jpg";
+import enterpriseIrelandLogo from "@/assets/enterprise-ireland-logo.png";
+import euLogo from "@/assets/eu-logo.jpg";
 
 const Index = () => {
   const logos = [
@@ -28,7 +31,10 @@ const Index = () => {
     { name: "SafeLife", image: safelifeLogo },
     { name: "Techstars", image: techstarsLogo },
     { name: "Ineffable Music", image: ineffableLogo },
-    { name: "Akimbo", image: akimboLogo }
+    { name: "Akimbo", image: akimboLogo },
+    { name: "AIM", image: aimLogo },
+    { name: "Enterprise Ireland", image: enterpriseIrelandLogo },
+    { name: "EU", image: euLogo }
   ];
   const services = [{
     icon: GraduationCap,
