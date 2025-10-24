@@ -3,7 +3,16 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Download, ExternalLink, Star, CheckCircle2, TrendingUp, Users, Target, BarChart3, Shield, Award, Clock, ArrowRight, Sparkles, Bot, GraduationCap, Workflow, LineChart, Puzzle, Rocket } from "lucide-react";
+import { Download, ExternalLink, Star, CheckCircle2, TrendingUp, Users, Target, BarChart3, Shield, Award, Clock, ArrowRight, Sparkles, Bot, GraduationCap, Workflow, LineChart, Puzzle, Rocket, Menu } from "lucide-react";
+import { useState } from "react";
+import {
+  Drawer,
+  DrawerClose,
+  DrawerContent,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
+} from "@/components/ui/drawer";
 import chevronLogo from "@/assets/chevron-logo.png";
 import iwaiLogo from "@/assets/iwai-logo-new.png";
 import altmbaLogo from "@/assets/altmba-logo.jpg";
@@ -24,6 +33,8 @@ import enterpriseIrelandLogo from "@/assets/enterprise-ireland-logo.png";
 import euLogo from "@/assets/eu-logo.jpg";
 
 const Index = () => {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  
   const logos = [
     { name: "AltMBA", image: altmbaLogo },
     { name: "Global Diversity Practice", image: gdpLogo },
@@ -135,9 +146,77 @@ const Index = () => {
               <Link to="/case-studies" className="text-foreground hover:text-accent transition-colors">Case Studies</Link>
             </div>
 
-            <Button variant="default" size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg" onClick={() => window.open('https://calendar.app.google/PaVwZ8ZxYX5SVBJT8', '_blank')}>
-              Book free intro call
-            </Button>
+            <div className="flex items-center gap-4">
+              <Button 
+                variant="default" 
+                size="lg" 
+                className="hidden md:inline-flex bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg" 
+                onClick={() => window.open('https://calendar.app.google/PaVwZ8ZxYX5SVBJT8', '_blank')}
+              >
+                Book free intro call
+              </Button>
+              
+              <Drawer open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
+                <DrawerTrigger asChild>
+                  <Button variant="ghost" size="icon" className="md:hidden">
+                    <Menu className="h-6 w-6" />
+                  </Button>
+                </DrawerTrigger>
+                <DrawerContent>
+                  <DrawerHeader>
+                    <DrawerTitle>Menu</DrawerTitle>
+                  </DrawerHeader>
+                  <div className="flex flex-col gap-4 p-4">
+                    <a 
+                      href="#services" 
+                      className="text-lg text-foreground hover:text-primary transition-colors py-2"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      Services
+                    </a>
+                    <a 
+                      href="#process" 
+                      className="text-lg text-foreground hover:text-primary transition-colors py-2"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      Process
+                    </a>
+                    <a 
+                      href="#results" 
+                      className="text-lg text-foreground hover:text-primary transition-colors py-2"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      Results
+                    </a>
+                    <a 
+                      href="#testimonials" 
+                      className="text-lg text-foreground hover:text-primary transition-colors py-2"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      Testimonials
+                    </a>
+                    <Link 
+                      to="/case-studies" 
+                      className="text-lg text-foreground hover:text-primary transition-colors py-2"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      Case Studies
+                    </Link>
+                    <Button 
+                      variant="default" 
+                      size="lg" 
+                      className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg mt-4" 
+                      onClick={() => {
+                        window.open('https://calendar.app.google/PaVwZ8ZxYX5SVBJT8', '_blank');
+                        setMobileMenuOpen(false);
+                      }}
+                    >
+                      Book free intro call
+                    </Button>
+                  </div>
+                </DrawerContent>
+              </Drawer>
+            </div>
           </div>
         </div>
       </nav>
