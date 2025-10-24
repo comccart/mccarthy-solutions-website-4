@@ -26,7 +26,7 @@ const CaseStudies = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="py-12 md:py-16">
+      <section className="pt-12 md:pt-16 pb-2 md:pb-4">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-foreground mb-6 text-center">
             Case Studies
@@ -67,7 +67,7 @@ const CaseStudies = () => {
       </section>
 
       {/* Training Section */}
-      <section id="training" className="py-4 scroll-mt-24">
+      <section id="training" className="pt-1 pb-12 scroll-mt-24">
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="bg-card border border-border rounded-lg p-8 md:p-12 shadow-soft">
             <div className="flex items-center gap-3 mb-8">
