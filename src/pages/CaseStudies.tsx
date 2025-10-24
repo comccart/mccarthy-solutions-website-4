@@ -14,14 +14,14 @@ const CaseStudies = () => {
     <div className="min-h-screen bg-background">
       {/* Header */}
       <header className="border-b border-border sticky top-0 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 z-50">
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <a href="/" className="flex items-center gap-2">
-            <img src={chevronLogo} alt="McCarthy Solutions" className="w-8 h-8" />
-            <span className="text-xl font-heading font-bold text-foreground">McCarthy Solutions</span>
-          </a>
-          
-          <div className="flex items-center gap-8">
-            <nav className="hidden md:flex gap-6">
+        <div className="container mx-auto px-4 py-4">
+          <div className="flex items-center justify-between">
+            <a href="/" className="flex items-center gap-2">
+              <img src={chevronLogo} alt="McCarthy Solutions" className="w-8 h-8" />
+              <span className="text-xl font-heading font-bold text-foreground">McCarthy Solutions</span>
+            </a>
+            
+            <nav className="hidden md:flex gap-8 flex-1 justify-center mx-8">
               <a href="/#services" className="text-foreground hover:text-primary transition-colors">Services</a>
               <a href="/#process" className="text-foreground hover:text-primary transition-colors">Process</a>
               <a href="/#results" className="text-foreground hover:text-primary transition-colors">Results</a>
@@ -32,7 +32,7 @@ const CaseStudies = () => {
             <Button 
               variant="default" 
               size="lg" 
-              className="hidden md:inline-flex bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg" 
+              className="hidden md:inline-flex bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg whitespace-nowrap" 
               onClick={() => window.open('https://calendar.app.google/KxxmEvbPQfzcdLFP7', '_blank')}
             >
               Book free intro call
