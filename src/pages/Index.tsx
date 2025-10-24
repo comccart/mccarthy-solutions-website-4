@@ -5,14 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Download, ExternalLink, Star, CheckCircle2, TrendingUp, Users, Target, BarChart3, Shield, Award, Clock, ArrowRight, Sparkles, Bot, GraduationCap, Workflow, LineChart, Puzzle, Rocket, Menu } from "lucide-react";
 import { useState } from "react";
-import {
-  Drawer,
-  DrawerClose,
-  DrawerContent,
-  DrawerHeader,
-  DrawerTitle,
-  DrawerTrigger,
-} from "@/components/ui/drawer";
+import { Drawer, DrawerClose, DrawerContent, DrawerHeader, DrawerTitle, DrawerTrigger } from "@/components/ui/drawer";
 import chevronLogo from "@/assets/chevron-logo.png";
 import iwaiLogo from "@/assets/iwai-logo-new.png";
 import altmbaLogo from "@/assets/altmba-logo.jpg";
@@ -31,22 +24,39 @@ import chrisImage from "@/assets/chris.jpeg";
 import aimLogo from "@/assets/aim-logo.jpg";
 import enterpriseIrelandLogo from "@/assets/enterprise-ireland-logo.png";
 import euLogo from "@/assets/eu-logo.jpg";
-
 const Index = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  
-  const logos = [
-    { name: "AltMBA", image: altmbaLogo },
-    { name: "Global Diversity Practice", image: gdpLogo },
-    { name: "Inclusion Intelligence", image: iipLogo },
-    { name: "SafeLife", image: safelifeLogo },
-    { name: "Techstars", image: techstarsLogo },
-    { name: "Ineffable Music", image: ineffableLogo },
-    { name: "Akimbo", image: akimboLogo },
-    { name: "AIM", image: aimLogo },
-    { name: "Enterprise Ireland", image: enterpriseIrelandLogo },
-    { name: "EU", image: euLogo }
-  ];
+  const logos = [{
+    name: "AltMBA",
+    image: altmbaLogo
+  }, {
+    name: "Global Diversity Practice",
+    image: gdpLogo
+  }, {
+    name: "Inclusion Intelligence",
+    image: iipLogo
+  }, {
+    name: "SafeLife",
+    image: safelifeLogo
+  }, {
+    name: "Techstars",
+    image: techstarsLogo
+  }, {
+    name: "Ineffable Music",
+    image: ineffableLogo
+  }, {
+    name: "Akimbo",
+    image: akimboLogo
+  }, {
+    name: "AIM",
+    image: aimLogo
+  }, {
+    name: "Enterprise Ireland",
+    image: enterpriseIrelandLogo
+  }, {
+    name: "EU",
+    image: euLogo
+  }];
   const services = [{
     icon: GraduationCap,
     title: "Learn AI with confidence",
@@ -147,12 +157,7 @@ const Index = () => {
             </div>
 
             <div className="flex items-center gap-4">
-              <Button 
-                variant="default" 
-                size="lg" 
-                className="hidden md:inline-flex bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg" 
-                onClick={() => window.open('https://calendar.app.google/PaVwZ8ZxYX5SVBJT8', '_blank')}
-              >
+              <Button variant="default" size="lg" className="hidden md:inline-flex bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg" onClick={() => window.open('https://calendar.app.google/PaVwZ8ZxYX5SVBJT8', '_blank')}>
                 Book free intro call
               </Button>
               
@@ -167,50 +172,25 @@ const Index = () => {
                     <DrawerTitle>Menu</DrawerTitle>
                   </DrawerHeader>
                   <div className="flex flex-col gap-4 p-4">
-                    <a 
-                      href="#services" 
-                      className="text-lg text-foreground hover:text-primary transition-colors py-2"
-                      onClick={() => setMobileMenuOpen(false)}
-                    >
+                    <a href="#services" className="text-lg text-foreground hover:text-primary transition-colors py-2" onClick={() => setMobileMenuOpen(false)}>
                       Services
                     </a>
-                    <a 
-                      href="#process" 
-                      className="text-lg text-foreground hover:text-primary transition-colors py-2"
-                      onClick={() => setMobileMenuOpen(false)}
-                    >
+                    <a href="#process" className="text-lg text-foreground hover:text-primary transition-colors py-2" onClick={() => setMobileMenuOpen(false)}>
                       Process
                     </a>
-                    <a 
-                      href="#results" 
-                      className="text-lg text-foreground hover:text-primary transition-colors py-2"
-                      onClick={() => setMobileMenuOpen(false)}
-                    >
+                    <a href="#results" className="text-lg text-foreground hover:text-primary transition-colors py-2" onClick={() => setMobileMenuOpen(false)}>
                       Results
                     </a>
-                    <a 
-                      href="#testimonials" 
-                      className="text-lg text-foreground hover:text-primary transition-colors py-2"
-                      onClick={() => setMobileMenuOpen(false)}
-                    >
+                    <a href="#testimonials" className="text-lg text-foreground hover:text-primary transition-colors py-2" onClick={() => setMobileMenuOpen(false)}>
                       Testimonials
                     </a>
-                    <Link 
-                      to="/case-studies" 
-                      className="text-lg text-foreground hover:text-primary transition-colors py-2"
-                      onClick={() => setMobileMenuOpen(false)}
-                    >
+                    <Link to="/case-studies" className="text-lg text-foreground hover:text-primary transition-colors py-2" onClick={() => setMobileMenuOpen(false)}>
                       Case Studies
                     </Link>
-                    <Button 
-                      variant="default" 
-                      size="lg" 
-                      className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg mt-4" 
-                      onClick={() => {
-                        window.open('https://calendar.app.google/PaVwZ8ZxYX5SVBJT8', '_blank');
-                        setMobileMenuOpen(false);
-                      }}
-                    >
+                    <Button variant="default" size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg mt-4" onClick={() => {
+                    window.open('https://calendar.app.google/PaVwZ8ZxYX5SVBJT8', '_blank');
+                    setMobileMenuOpen(false);
+                  }}>
                       Book free intro call
                     </Button>
                   </div>
@@ -222,7 +202,10 @@ const Index = () => {
       </nav>
 
       {/* Enhanced Hero Section */}
-      <section className="pt-32 pb-24 px-6" style={{ paddingTop: '128px', paddingBottom: '100px' }}>
+      <section className="pt-32 pb-24 px-6" style={{
+      paddingTop: '128px',
+      paddingBottom: '100px'
+    }}>
         <div className="container mx-auto max-w-6xl">
           {/* Trust Badges */}
           <div className="flex flex-wrap items-start gap-6 mb-12">
@@ -262,22 +245,19 @@ const Index = () => {
           {/* Logo Carousel */}
           <div className="relative overflow-hidden py-8">
             <div className="flex gap-12 animate-scroll">
-              {[...logos, ...logos].map((logo, i) => (
-                <div key={i} className="flex-shrink-0">
-                  <img 
-                    src={logo.image} 
-                    alt={logo.name}
-                    className="h-12 w-auto object-contain transition-all"
-                  />
-                </div>
-              ))}
+              {[...logos, ...logos].map((logo, i) => <div key={i} className="flex-shrink-0">
+                  <img src={logo.image} alt={logo.name} className="h-12 w-auto object-contain transition-all" />
+                </div>)}
             </div>
           </div>
         </div>
       </section>
 
       {/* Problem/Solution Section */}
-      <section className="px-6 bg-background" style={{ paddingTop: '100px', paddingBottom: '100px' }}>
+      <section className="px-6 bg-background" style={{
+      paddingTop: '100px',
+      paddingBottom: '100px'
+    }}>
         <div className="container mx-auto max-w-6xl text-center mb-16">
           <Badge variant="default" className="mb-6 bg-primary text-primary-foreground">The Challenge</Badge>
           <h2 className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
@@ -364,7 +344,11 @@ const Index = () => {
       </section>
 
       {/* Detailed Services Section */}
-      <section id="services" className="px-6" style={{ paddingTop: '100px', paddingBottom: '100px', backgroundColor: '#F5F1ED' }}>
+      <section id="services" className="px-6" style={{
+      paddingTop: '100px',
+      paddingBottom: '100px',
+      backgroundColor: '#F5F1ED'
+    }}>
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
             <Badge variant="default" className="mb-4 bg-primary text-primary-foreground">Our Services</Badge>
@@ -401,7 +385,10 @@ const Index = () => {
       </section>
 
       {/* Social Proof & Testimonials */}
-      <section id="testimonials" className="px-6 bg-background" style={{ paddingTop: '100px', paddingBottom: '100px' }}>
+      <section id="testimonials" className="px-6 bg-background" style={{
+      paddingTop: '100px',
+      paddingBottom: '100px'
+    }}>
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
             <Badge variant="default" className="mb-4 bg-primary text-primary-foreground">Client Success</Badge>
@@ -425,11 +412,7 @@ const Index = () => {
                 </CardHeader>
                 <CardContent>
                   <div className="flex items-center gap-3">
-                    <img 
-                      src={testimonial.image} 
-                      alt={testimonial.author}
-                      className="w-12 h-12 rounded-full object-cover"
-                    />
+                    <img src={testimonial.image} alt={testimonial.author} className="w-12 h-12 rounded-full object-cover" />
                     <div>
                       <p className="font-semibold text-foreground">{testimonial.author}</p>
                       <p className="text-sm text-secondary">{testimonial.role}</p>
@@ -442,7 +425,11 @@ const Index = () => {
       </section>
 
       {/* Process/Methodology Section */}
-      <section id="process" className="px-6" style={{ paddingTop: '100px', paddingBottom: '100px', backgroundColor: '#F5F1ED' }}>
+      <section id="process" className="px-6" style={{
+      paddingTop: '100px',
+      paddingBottom: '100px',
+      backgroundColor: '#F5F1ED'
+    }}>
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
             <Badge variant="default" className="mb-4 bg-primary text-primary-foreground">Our Process</Badge>
@@ -481,7 +468,10 @@ const Index = () => {
       </section>
 
       {/* Results & Case Studies */}
-      <section id="results" className="px-6 bg-background" style={{ paddingTop: '100px', paddingBottom: '100px' }}>
+      <section id="results" className="px-6 bg-background" style={{
+      paddingTop: '100px',
+      paddingBottom: '100px'
+    }}>
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
             <Badge variant="default" className="mb-4 bg-primary text-primary-foreground">Proven Results</Badge>
@@ -516,22 +506,36 @@ const Index = () => {
       </section>
 
       {/* What We Believe About AI */}
-      <section className="px-6" style={{ paddingTop: '100px', paddingBottom: '100px', backgroundColor: '#407899' }}>
+      <section className="px-6" style={{
+      paddingTop: '100px',
+      paddingBottom: '100px',
+      backgroundColor: '#407899'
+    }}>
         <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8" style={{ color: '#F5F1ED' }}>
+          <h2 className="text-4xl md:text-5xl font-bold mb-8" style={{
+          color: '#F5F1ED'
+        }}>
             What we believe about AI.
           </h2>
-          <div className="space-y-6 text-xl" style={{ color: '#F5F1ED' }}>
+          <div className="space-y-6 text-xl" style={{
+          color: '#F5F1ED'
+        }}>
             <div className="flex items-start gap-4 text-left max-w-3xl mx-auto">
-              <Bot className="w-8 h-8 flex-shrink-0 mt-1" style={{ color: '#FBA60C' }} />
+              <Bot className="w-8 h-8 flex-shrink-0 mt-1" style={{
+              color: '#FBA60C'
+            }} />
               <p>AI is not a replacement for human judgment. It's a tool that amplifies your expertise and frees you to focus on what truly matters.</p>
             </div>
             <div className="flex items-start gap-4 text-left max-w-3xl mx-auto">
-              <Workflow className="w-8 h-8 flex-shrink-0 mt-1" style={{ color: '#FBA60C' }} />
+              <Workflow className="w-8 h-8 flex-shrink-0 mt-1" style={{
+              color: '#FBA60C'
+            }} />
               <p>The best AI implementations are simple, practical, and built around the way you already work.</p>
             </div>
             <div className="flex items-start gap-4 text-left max-w-3xl mx-auto">
-              <Users className="w-8 h-8 flex-shrink-0 mt-1" style={{ color: '#FBA60C' }} />
+              <Users className="w-8 h-8 flex-shrink-0 mt-1" style={{
+              color: '#FBA60C'
+            }} />
               <p>Real transformation happens when technology serves people, not the other way around.</p>
             </div>
           </div>
@@ -540,7 +544,10 @@ const Index = () => {
 
 
       {/* Trust & Certification */}
-      <section className="px-6 bg-background" style={{ paddingTop: '100px', paddingBottom: '100px' }}>
+      <section className="px-6 bg-background" style={{
+      paddingTop: '100px',
+      paddingBottom: '100px'
+    }}>
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
@@ -552,35 +559,33 @@ const Index = () => {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            {[
-              { 
-                name: "Seth Godin", 
-                image: sethGodinImage,
-                description: "Changed how millions think about marketing, trust, and creative work by making ideas spread through clarity and generosity."
-              },
-              { 
-                name: "Ramon Ray", 
-                image: ramonRayImage,
-                description: "Inspires and equips entrepreneurs with practical business growth advice rooted in energy, storytelling, and community."
-              },
-              { 
-                name: "Bernadette Jiwa", 
-                image: bernadetteJiwaImage,
-                description: "Helps brands find and tell meaningful stories that connect deeply with the people they serve."
-              }
-            ].map((person, i) => (
-              <div key={i} className="flex flex-col items-center text-center p-4 rounded-lg border-2 border-primary/20 hover:border-primary/50 transition-all">
+            {[{
+            name: "Seth Godin",
+            image: sethGodinImage,
+            description: "Changed how millions think about marketing, trust, and creative work by making ideas spread through clarity and generosity."
+          }, {
+            name: "Ramon Ray",
+            image: ramonRayImage,
+            description: "Inspires and equips entrepreneurs with practical business growth advice rooted in energy, storytelling, and community."
+          }, {
+            name: "Bernadette Jiwa",
+            image: bernadetteJiwaImage,
+            description: "Helps brands find and tell meaningful stories that connect deeply with the people they serve."
+          }].map((person, i) => <div key={i} className="flex flex-col items-center text-center p-4 rounded-lg border-2 border-primary/20 hover:border-primary/50 transition-all">
                 <img src={person.image} alt={person.name} className="w-40 h-40 rounded-full object-cover mb-4" />
                 <p className="font-semibold text-foreground mb-2">{person.name}</p>
                 <p className="text-sm text-muted-foreground">{person.description}</p>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </section>
 
       {/* FAQ Section */}
-      <section className="px-6" style={{ paddingTop: '100px', paddingBottom: '100px', backgroundColor: '#F5F1ED' }}>
+      <section className="px-6" style={{
+      paddingTop: '100px',
+      paddingBottom: '100px',
+      backgroundColor: '#F5F1ED'
+    }}>
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-16">
             <Badge variant="default" className="mb-4 bg-primary text-primary-foreground">FAQ</Badge>
@@ -606,37 +611,65 @@ const Index = () => {
       </section>
 
       {/* Final CTA Section */}
-      <section id="contact" className="px-6" style={{ paddingTop: '100px', paddingBottom: '100px', backgroundColor: '#2E294E' }}>
+      <section id="contact" className="px-6" style={{
+      paddingTop: '100px',
+      paddingBottom: '100px',
+      backgroundColor: '#2E294E'
+    }}>
         <div className="container mx-auto max-w-4xl text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border mb-8" style={{ backgroundColor: 'rgba(251, 166, 12, 0.1)', borderColor: 'rgba(251, 166, 12, 0.3)' }}>
-            <Clock className="w-4 h-4" style={{ color: '#FBA60C' }} />
-            <span className="text-sm font-medium" style={{ color: '#F5F1ED' }}>Limited Spots Available This Quarter</span>
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border mb-8" style={{
+          backgroundColor: 'rgba(251, 166, 12, 0.1)',
+          borderColor: 'rgba(251, 166, 12, 0.3)'
+        }}>
+            <Clock className="w-4 h-4" style={{
+            color: '#FBA60C'
+          }} />
+            <span className="text-sm font-medium" style={{
+            color: '#F5F1ED'
+          }}>Limited Spots Available This Quarter</span>
           </div>
           
-          <h2 className="text-4xl md:text-6xl font-bold mb-6" style={{ color: '#F5F1ED' }}>
+          <h2 className="text-4xl md:text-6xl font-bold mb-6" style={{
+          color: '#F5F1ED'
+        }}>
             Ready to change the way you work?
           </h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto" style={{ color: '#F5F1ED', opacity: 0.9 }}>
+          <p className="text-xl mb-8 max-w-2xl mx-auto" style={{
+          color: '#F5F1ED',
+          opacity: 0.9
+        }}>
             Book a free strategy call. We'll talk about your work and where AI can help.
           </p>
           
           <div className="flex flex-wrap items-center justify-center gap-4 mb-8">
-            <Button size="lg" className="text-lg px-8 shadow-lg" style={{ backgroundColor: '#FBA60C', color: '#2E294E' }} onClick={() => window.open('https://calendar.app.google/PaVwZ8ZxYX5SVBJT8', '_blank')}>
+            <Button size="lg" className="text-lg px-8 shadow-lg" style={{
+            backgroundColor: '#FBA60C',
+            color: '#2E294E'
+          }} onClick={() => window.open('https://calendar.app.google/PaVwZ8ZxYX5SVBJT8', '_blank')}>
               Book free intro call
             </Button>
           </div>
 
-          <div className="flex flex-wrap items-center justify-center gap-8 text-sm" style={{ color: '#F5F1ED', opacity: 0.8 }}>
+          <div className="flex flex-wrap items-center justify-center gap-8 text-sm" style={{
+          color: '#F5F1ED',
+          opacity: 0.8
+        }}>
             <div className="flex items-center gap-2">
-              <CheckCircle2 className="w-4 h-4" style={{ color: '#FBA60C' }} />
+              <CheckCircle2 className="w-4 h-4" style={{
+              color: '#FBA60C'
+            }} />
               <span>30 minutes</span>
             </div>
             <div className="flex items-center gap-2">
-              <CheckCircle2 className="w-4 h-4" style={{ color: '#FBA60C' }} />
+              <CheckCircle2 className="w-4 h-4" style={{
+              color: '#FBA60C'
+            }} />
               <span>No sales pitch</span>
             </div>
             <div className="flex items-center gap-2">
-              <CheckCircle2 className="w-4 h-4" style={{ color: '#FBA60C' }} />
+              <CheckCircle2 className="w-4 h-4" style={{
+              color: '#FBA60C'
+            }} />
               <span>Just clarity</span>
             </div>
           </div>
@@ -644,7 +677,9 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="py-12 px-6 border-t border-border" style={{ backgroundColor: '#F5F1ED' }}>
+      <footer className="py-12 px-6 border-t border-border" style={{
+      backgroundColor: '#F5F1ED'
+    }}>
         <div className="container mx-auto max-w-6xl">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
@@ -652,9 +687,7 @@ const Index = () => {
                 <img src={chevronLogo} alt="McCarthy Solutions" className="w-7 h-7" />
                 <div className="text-xl font-bold text-foreground">McCarthy Solutions</div>
               </div>
-              <p className="text-muted-foreground text-sm">
-                AI consultant for consultants and SME leaders.
-              </p>
+              <p className="text-muted-foreground text-sm">AI consultant for consultants and SME leaders.</p>
             </div>
             <div>
               <h4 className="font-semibold mb-4 text-foreground">Services</h4>
