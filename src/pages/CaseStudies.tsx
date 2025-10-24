@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { GraduationCap, Lightbulb, Target } from "lucide-react";
+import chevronLogo from "@/assets/chevron-logo.png";
 
 const CaseStudies = () => {
   const scrollToSection = (sectionId: string) => {
@@ -280,9 +281,47 @@ const CaseStudies = () => {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-border py-8">
-        <div className="container mx-auto px-4 text-center text-muted-foreground">
-          <p>© 2025 McCarthy Solutions. All rights reserved.</p>
+      <footer className="border-t border-border py-16 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-4 gap-8 mb-8">
+            <div>
+              <div className="flex items-center gap-2 mb-4">
+                <img src={chevronLogo} alt="McCarthy Solutions" className="w-7 h-7" />
+                <div className="text-xl font-bold text-foreground">McCarthy Solutions</div>
+              </div>
+              <p className="text-muted-foreground text-sm">
+                AI consultant for consultants and SME leaders.
+              </p>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-4 text-foreground">Services</h4>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li><a href="/#services" className="hover:text-accent transition-colors">AI Training</a></li>
+                <li><a href="/#services" className="hover:text-accent transition-colors">Strategy & Advisory</a></li>
+                <li><a href="/#services" className="hover:text-accent transition-colors">Implementation</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-4 text-foreground">Company</h4>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li><a href="/#about" className="hover:text-accent transition-colors">About Us</a></li>
+                <li><a href="/case-studies" className="hover:text-accent transition-colors">Case Studies</a></li>
+                <li><a href="/#testimonials" className="hover:text-accent transition-colors">Testimonials</a></li>
+                <li><a href="/#contact" className="hover:text-accent transition-colors">Contact</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-4 text-foreground">Legal</h4>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li><a href="#" className="hover:text-accent transition-colors">Privacy Policy</a></li>
+                <li><a href="#" className="hover:text-accent transition-colors">Terms of Service</a></li>
+                <li><a href="#" className="hover:text-accent transition-colors">Cookie Policy</a></li>
+              </ul>
+            </div>
+          </div>
+          <div className="pt-8 border-t border-border text-center text-sm text-muted-foreground">
+            © 2025 McCarthy Solutions. All rights reserved. Built with 💚 in Dublin. <a href="mailto:conor@mccarthy-solutions.com" className="hover:text-accent transition-colors underline">Get in touch</a>
+          </div>
         </div>
       </footer>
     </div>
