@@ -27,7 +27,6 @@ const CaseStudies = () => {
               <a href="/#results" className="text-foreground hover:text-primary transition-colors">Results</a>
               <a href="/#testimonials" className="text-foreground hover:text-primary transition-colors">Testimonials</a>
               <a href="/case-studies" className="text-primary font-semibold">Case Studies</a>
-              <a href="/blog" className="text-foreground hover:text-primary transition-colors">Blog</a>
             </nav>
             
             <Button 
