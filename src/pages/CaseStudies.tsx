@@ -21,18 +21,18 @@ const CaseStudies = () => {
               <span className="text-xl font-heading font-bold text-foreground">McCarthy Solutions</span>
             </a>
             
-            <nav className="hidden md:flex gap-8 flex-1 justify-center mx-8">
+            <div className="hidden md:flex items-center gap-8">
               <a href="/#services" className="text-foreground hover:text-primary transition-colors">Services</a>
               <a href="/#process" className="text-foreground hover:text-primary transition-colors">Process</a>
               <a href="/#results" className="text-foreground hover:text-primary transition-colors">Results</a>
               <a href="/#testimonials" className="text-foreground hover:text-primary transition-colors">Testimonials</a>
               <a href="/case-studies" className="text-primary font-semibold">Case Studies</a>
-            </nav>
+            </div>
             
             <Button 
               variant="default" 
               size="lg" 
-              className="hidden md:inline-flex bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg whitespace-nowrap" 
+              className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg" 
               onClick={() => window.open('https://calendar.app.google/KxxmEvbPQfzcdLFP7', '_blank')}
             >
               Book free intro call
