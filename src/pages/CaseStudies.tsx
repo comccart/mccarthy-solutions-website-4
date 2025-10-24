@@ -67,7 +67,7 @@ const CaseStudies = () => {
       </section>
 
       {/* Training Section */}
-      <section id="training" className="py-16 scroll-mt-24">
+      <section id="training" className="py-8 scroll-mt-24">
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="bg-card border border-border rounded-lg p-8 md:p-12 shadow-soft">
             <div className="flex items-center gap-3 mb-8">
@@ -124,7 +124,7 @@ const CaseStudies = () => {
               
               <div className="mt-8 flex justify-center">
                 <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-lg px-8 py-6 text-lg font-semibold shadow-lg hover:shadow-xl transition-all" asChild>
-                  <a href="/#contact">Book free intro call →</a>
+                  <a href="https://calendar.app.google/KxxmEvbPQfzcdLFP7" target="_blank" rel="noopener noreferrer">Book free intro call →</a>
                 </Button>
               </div>
             </div>
@@ -190,7 +190,7 @@ const CaseStudies = () => {
               
               <div className="mt-8 flex justify-center">
                 <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-lg px-8 py-6 text-lg font-semibold shadow-lg hover:shadow-xl transition-all" asChild>
-                  <a href="/#contact">Book free intro call →</a>
+                  <a href="https://calendar.app.google/KxxmEvbPQfzcdLFP7" target="_blank" rel="noopener noreferrer">Book free intro call →</a>
                 </Button>
               </div>
             </div>
@@ -256,7 +256,7 @@ const CaseStudies = () => {
               
               <div className="mt-8 flex justify-center">
                 <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-lg px-8 py-6 text-lg font-semibold shadow-lg hover:shadow-xl transition-all" asChild>
-                  <a href="/#contact">Book free intro call →</a>
+                  <a href="https://calendar.app.google/KxxmEvbPQfzcdLFP7" target="_blank" rel="noopener noreferrer">Book free intro call →</a>
                 </Button>
               </div>
             </div>
