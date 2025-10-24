@@ -588,10 +588,10 @@ const Index = () => {
             <div>
               <h4 className="font-semibold mb-4 text-foreground">Company</h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><a href="#about" className="hover:text-accent transition-colors">About Us</a></li>
-                <li><a href="#results" className="hover:text-accent transition-colors">Case Studies</a></li>
+                <li><a href="#process" className="hover:text-accent transition-colors">Process</a></li>
+                <li><a href="#results" className="hover:text-accent transition-colors">Results</a></li>
                 <li><a href="#testimonials" className="hover:text-accent transition-colors">Testimonials</a></li>
-                <li><a href="#contact" className="hover:text-accent transition-colors">Contact</a></li>
+                <li><a href="/case-studies" className="hover:text-accent transition-colors">Case Studies</a></li>
               </ul>
             </div>
             <div>
