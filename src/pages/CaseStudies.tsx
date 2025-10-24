@@ -364,7 +364,7 @@ const CaseStudies = () => {
             Ready to explore your next step? Contact us now.
           </p>
           <Button size="lg" asChild>
-            <a href="/#contact">Get in touch</a>
+            <a href="https://calendar.app.google/KxxmEvbPQfzcdLFP7" target="_blank" rel="noopener noreferrer">Get in touch</a>
           </Button>
         </div>
       </section>
