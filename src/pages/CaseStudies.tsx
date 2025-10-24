@@ -58,7 +58,7 @@ const CaseStudies = () => {
           </nav>
 
           {/* Intro Paragraph */}
-          <div className="max-w-3xl mx-auto text-center mb-8">
+          <div className="max-w-3xl mx-auto text-center mb-4">
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
               Explore three deep-dive case studies showcasing how we turn capability into training, implementation and strategy for AI-driven organisations.
             </p>
@@ -67,7 +67,7 @@ const CaseStudies = () => {
       </section>
 
       {/* Training Section */}
-      <section id="training" className="py-8 scroll-mt-24">
+      <section id="training" className="py-4 scroll-mt-24">
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="bg-card border border-border rounded-lg p-8 md:p-12 shadow-soft">
             <div className="flex items-center gap-3 mb-8">
