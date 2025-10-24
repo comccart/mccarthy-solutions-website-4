@@ -15,14 +15,30 @@ const CaseStudies = () => {
       {/* Header */}
       <header className="border-b border-border sticky top-0 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 z-50">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <a href="/" className="text-2xl font-heading font-bold text-foreground">
-            McCarthy Solutions
+          <a href="/" className="flex items-center gap-2">
+            <img src={chevronLogo} alt="McCarthy Solutions" className="w-8 h-8" />
+            <span className="text-xl font-heading font-bold text-foreground">McCarthy Solutions</span>
           </a>
-          <nav className="hidden md:flex gap-6">
-            <a href="/" className="text-foreground hover:text-primary transition-colors">Home</a>
-            <a href="/case-studies" className="text-primary font-semibold">Case Studies</a>
-            <a href="/blog" className="text-foreground hover:text-primary transition-colors">Blog</a>
-          </nav>
+          
+          <div className="flex items-center gap-8">
+            <nav className="hidden md:flex gap-6">
+              <a href="/#services" className="text-foreground hover:text-primary transition-colors">Services</a>
+              <a href="/#process" className="text-foreground hover:text-primary transition-colors">Process</a>
+              <a href="/#results" className="text-foreground hover:text-primary transition-colors">Results</a>
+              <a href="/#testimonials" className="text-foreground hover:text-primary transition-colors">Testimonials</a>
+              <a href="/case-studies" className="text-primary font-semibold">Case Studies</a>
+              <a href="/blog" className="text-foreground hover:text-primary transition-colors">Blog</a>
+            </nav>
+            
+            <Button 
+              variant="default" 
+              size="lg" 
+              className="hidden md:inline-flex bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg" 
+              onClick={() => window.open('https://calendar.app.google/KxxmEvbPQfzcdLFP7', '_blank')}
+            >
+              Book free intro call
+            </Button>
+          </div>
         </div>
       </header>
 
