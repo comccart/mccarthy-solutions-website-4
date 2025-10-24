@@ -133,7 +133,6 @@ const Index = () => {
               <a href="#results" className="text-foreground hover:text-accent transition-colors">Results</a>
               <a href="#testimonials" className="text-foreground hover:text-accent transition-colors">Testimonials</a>
               <Link to="/case-studies" className="text-foreground hover:text-accent transition-colors">Case Studies</Link>
-              <Link to="/blog" className="text-foreground hover:text-accent transition-colors">Blog</Link>
             </div>
 
             <Button variant="default" size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg" onClick={() => window.open('https://calendar.app.google/PaVwZ8ZxYX5SVBJT8', '_blank')}>

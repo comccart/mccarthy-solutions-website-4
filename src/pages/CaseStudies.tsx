@@ -26,7 +26,7 @@ const CaseStudies = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="py-12 md:py-20">
+      <section className="py-12 md:py-16">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-foreground mb-6 text-center">
             Case Studies
@@ -58,7 +58,7 @@ const CaseStudies = () => {
           </nav>
 
           {/* Intro Paragraph */}
-          <div className="max-w-3xl mx-auto text-center">
+          <div className="max-w-3xl mx-auto text-center mb-8">
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
               Explore three deep-dive case studies showcasing how we turn capability into training, implementation and strategy for AI-driven organisations.
             </p>
@@ -112,14 +112,20 @@ const CaseStudies = () => {
                   Participants described the experience as "eye-opening," "thought-provoking" and "a huge boost to confidence."
                 </p>
                 <ul className="space-y-2 mb-4 pl-4">
-                  <li className="leading-relaxed">"I got a huge return on the two-hour investment." — John Corridan</li>
-                  <li className="leading-relaxed">"Smart, useful and genuinely thought-provoking." — Meg Skelton</li>
+                  <li className="leading-relaxed">"I got a huge return on the two-hour investment." — J. Corridan</li>
+                  <li className="leading-relaxed">"Smart, useful and genuinely thought-provoking." — M. Skelton</li>
                   <li className="leading-relaxed">"It helped me step back and see the bigger picture." — Tobias W.</li>
-                  <li className="leading-relaxed">"I left inspired and ready to write about and use AI in my life." — Leigh Shulman</li>
+                  <li className="leading-relaxed">"I left inspired and ready to write about and use AI in my life." — L. Shulman</li>
                 </ul>
                 <p className="leading-relaxed">
                   The workshop's biggest impact was psychological: leaders no longer felt left behind. They gained confidence to discuss and experiment with AI in their organisations — from frontline staff to the C-suite. My own realisation was how universal this need still is. Across sectors and seniority levels, people crave a grounded introduction to AI that connects tools to values and leadership. That insight now shapes every training programme I design.
                 </p>
+              </div>
+              
+              <div className="mt-8 flex justify-center">
+                <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-lg px-8 py-6 text-lg font-semibold shadow-lg hover:shadow-xl transition-all" asChild>
+                  <a href="/#contact">Book free intro call →</a>
+                </Button>
               </div>
             </div>
           </div>
@@ -181,6 +187,12 @@ const CaseStudies = () => {
                   The broader insight: AI doesn't replace expertise — it amplifies it when built around the organisation's core values.
                 </p>
               </div>
+              
+              <div className="mt-8 flex justify-center">
+                <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-lg px-8 py-6 text-lg font-semibold shadow-lg hover:shadow-xl transition-all" asChild>
+                  <a href="/#contact">Book free intro call →</a>
+                </Button>
+              </div>
             </div>
           </div>
         </div>
@@ -241,6 +253,12 @@ const CaseStudies = () => {
                   The broader insight: for large, acquisitive organisations, AI succeeds when it aligns with existing strategy, respects governance and is introduced incrementally.
                 </p>
               </div>
+              
+              <div className="mt-8 flex justify-center">
+                <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-lg px-8 py-6 text-lg font-semibold shadow-lg hover:shadow-xl transition-all" asChild>
+                  <a href="/#contact">Book free intro call →</a>
+                </Button>
+              </div>
             </div>
           </div>
         </div>
@@ -253,7 +271,7 @@ const CaseStudies = () => {
             Let's talk about how AI can work for you
           </h2>
           <p className="text-lg text-muted-foreground mb-8">
-            Ready to explore your next step? Contact me now.
+            Ready to explore your next step? Contact us now.
           </p>
           <Button size="lg" asChild>
             <a href="/#contact">Get in touch</a>
