@@ -29,7 +29,7 @@ const CaseStudies = () => {
           <div className="flex items-center justify-between">
             <a href="/" className="flex items-center gap-2">
               <img src={chevronLogo} alt="McCarthy Solutions" className="w-8 h-8" />
-              <span className="text-xl font-heading font-bold text-foreground">McCarthy Solutions</span>
+              <span className="text-2xl font-bold text-foreground">McCarthy Solutions</span>
             </a>
             
             <div className="hidden md:flex items-center gap-8">
